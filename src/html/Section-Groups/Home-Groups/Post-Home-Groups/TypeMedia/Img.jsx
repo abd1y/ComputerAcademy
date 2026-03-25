@@ -1,5 +1,4 @@
 import React from 'react'
-import Defult from '../../../../../assets/ttt.jpg'
 
 export default function Img({LinkImage}) {
   return (

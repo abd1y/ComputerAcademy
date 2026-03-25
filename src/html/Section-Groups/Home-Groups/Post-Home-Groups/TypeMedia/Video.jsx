@@ -1,5 +1,5 @@
 import React from 'react'
-import Defult from '../../../../../assets/video2.mp4'
+
 import ItemVideo from './ItemVideo'
 import { useRef,useState,useEffect } from 'react'
 import {handlerVideo} from '../../../../../js/Scrept'

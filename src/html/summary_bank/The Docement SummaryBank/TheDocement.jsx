@@ -3,7 +3,6 @@ import TheLogoDocement from './TheLogoDocement'
 import InfoDocement from './infoDocement/InfoDocement'
 import '../../../css/TheDocement.css'
 import { useTranslation } from 'react-i18next'
-import ppd from '../../../assets/ppd.pdf'
 export default function TheDocement({itam}) {
   const {t,i18n}=useTranslation()
   return (

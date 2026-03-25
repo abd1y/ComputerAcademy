@@ -2,7 +2,6 @@ import {useState} from 'react'
 import { useTranslation } from 'react-i18next'
 import ProfileAdmin from './ProfileAdmin'
 import ProfileMember from './ProfileMember'
-import adminProfile from '../../../assets/ttt3.jpg'
 import Member from '../../../assets/LogoDocement1.png'
 import Loding from './Loding'
 const Members = ({loding,dataMember}) => {
