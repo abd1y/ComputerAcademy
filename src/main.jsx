@@ -4,15 +4,15 @@ import './css/style.css'
 import App from './App.jsx'
 import {BrowserRouter} from 'react-router-dom'
 import './i18n';
-
+import { HashRouter } from 'react-router-dom'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter basename="/ComputerAcademy">
+    <HashRouter>
     
     <App/>  
 
     
-    </BrowserRouter>
+    </HashRouter>
     
   </StrictMode>
 )
