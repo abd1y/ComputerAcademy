@@ -11,7 +11,7 @@ setcomments(prv=>[newcomment ,...prv])
 
   return (
     <div className={clickComent?"Comment-Item-Acteve":"Comment-Item-not-acctev"}>
-<UserComent comment={comment}/>
+<UserComent comment={comment} post_id={post_id} setcomments={setcomments}/>
 {
   CanComment?( <AddComent post_id={post_id} commenthandler={commenthandler}/>):
   (<p className='Mesgcomment'>Only the admin can add  comment </p>)

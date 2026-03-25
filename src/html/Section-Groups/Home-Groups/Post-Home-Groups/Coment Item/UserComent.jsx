@@ -1,10 +1,22 @@
 import React from 'react'
 import images from '../../../../../assets/images.png'
-import { Link } from 'react-router-dom'
-
-export default function UserComent({comment}) {
+import { Link, useParams } from 'react-router-dom'
+import API from '../../../../Axios'
+export default function UserComent({comment,post_id,setcomments}) {
   const data_save=JSON.parse(localStorage.getItem("data"))
   const id=data_save.id
+  const Token=JSON.parse(localStorage.getItem("Token"))
+const {Group_code}=useParams()
+  const deleteCommithandler=(id)=>{
+    API.delete(`Groups/delete_comment/${id}/?Group_code=%23${Group_code}`,{
+      headers:{
+        Authorization:`Token ${Token}`
+      }
+    })
+    .then(()=>{
+setcomments(prv=>prv.filter(commit=>commit.Comment_id !== id))
+    })
+  }
   return (
     <>
   
@@ -25,7 +37,7 @@ comment.map((item_comment)=>(
   </Link>
 <p> {item_comment.content}</p>
 
-<p className='Delete-commit' style={{display:id===item_comment.user_id?"block":"none"}}>Delete</p>
+<p className='Delete-commit' onClick={()=>deleteCommithandler(item_comment.Comment_id)} style={{display:id===item_comment.user_id?"block":"none"}}>Delete</p>
 </div>
 </div>
 ))
