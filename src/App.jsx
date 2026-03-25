@@ -28,15 +28,15 @@
     return (
       <Routes>
       <Route path="/" element={<IndexPage/>} />
-      <Route path="/DocementPost" element={<PostDocementPage/>} />
-      <Route path="/Serch-Groupe" element={<SerchGroups/>}/>
-      <Route path="/Creat-Groups" element={<CreatGroups/>} />
-      <Route path="/Profile/:id" element={<Profile/>} />
-      <Route path="/Log-in" element={<Login/>}/>
-      <Route path="/sing-up" element={<Regester/>}/>
-      <Route path="/Reset-Password" element={<MainResetPassword/>}/>
-      <Route path="/Forget-password" element={<MainForgetPaassword/>}/>
-      <Route path="/Section-Group/:Group_code" element={<SectionGroups/>}/>
+      <Route path="DocementPost" element={<PostDocementPage/>} />
+      <Route path="Serch-Groupe" element={<SerchGroups/>}/>
+      <Route path="Creat-Groups" element={<CreatGroups/>} />
+      <Route path="Profile/:id" element={<Profile/>} />
+      <Route path="Log-in" element={<Login/>}/>
+      <Route path="sing-up" element={<Regester/>}/>
+      <Route path="Reset-Password" element={<MainResetPassword/>}/>
+      <Route path="Forget-password" element={<MainForgetPaassword/>}/>
+      <Route path="Section-Group/:Group_code" element={<SectionGroups/>}/>
 
       
 
