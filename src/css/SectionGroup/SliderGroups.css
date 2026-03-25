@@ -1,0 +1,60 @@
+:root{
+    --Select:#35353C;
+    --brown:#1D1D21;
+    --blue5:#27374D;
+    --blue3:#091f2e;
+    ---blue2:#164465;
+    --whate:#F2F8Fc;
+    --poplor:#592093;
+    --blue:#2984c6;
+    --blue4:#065084;
+    --grey:#57595B;
+    --Blue-Nght:#0F172A;
+}
+.SectionGroup{
+    width: 100%;
+    height: 100vh;
+}
+.SliderGroups{
+    user-select: none;
+height: 67px;
+    width: 100%;
+    background-color: var(--Select);
+}
+.Slider-Group-item{
+height: 100%;
+display: flex;
+
+    direction: rtl;
+    color: var(--whate);
+}
+.selec-item{
+    border-radius: 2px;
+    text-align: center;
+    height: 13vh;
+      flex: 1;    
+background-color: var(---blue2);
+padding: 15px;
+font-size: 26px;
+font-weight: 500;
+border-left: 1px solid var(--Select);
+}
+.selec-item:last-child{
+    border: none;
+}
+.Active-selec-item-Group{
+    background-color:var(--Blue-Nght);
+    font-size: 30px;
+
+}
+.backHome{
+    border-radius: 2px;
+    background-color: var(--brown);
+        font-size: 32px;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        
+}
+
+

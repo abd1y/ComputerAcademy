@@ -1,0 +1,485 @@
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Science+Gothic:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+
+
+.PostDocement {
+
+user-select: none;
+    width: 100%;
+    background-color: var(--grey);
+}
+
+
+.itemPostDocement{
+      overflow-y: auto;
+      overflow-x: hidden;
+    scrollbar-width:none;
+height: 86vh;
+}
+.BackPostDocement{
+    display: flex;
+    direction: rtl;
+    margin: 20px;
+
+
+}
+.BacktoHome{
+    
+    background-color: var(--dark-grey);
+    width: 50px;
+    padding: 15px;
+    color: rgb(255, 255, 255);
+    border-radius: 30px;
+  
+}
+.BacktoHome i{
+    color: var(--whate);
+    font-size: 20px;
+}
+.DocementName{
+width: 100%;
+padding: 10px;
+ font-family: "Open Sans", sans-serif;
+font-weight: bold;
+
+}
+[dir="rtl"].DocementName {
+margin-left: -20px;
+}
+.DocementName h1{
+    margin-bottom: 10px;
+    color: #F2F8Fc;
+    font-size: 25px;
+    user-select: none;
+
+}
+.DocementName input{
+background-color: #2B2B2C;
+color: var(--whate);
+ width: 97%;
+ padding: 20px;
+ outline: none;
+ border: none;
+border-radius: 10px;
+font-size: 20px;
+}
+.DocementName input::selection{
+    background-color: var(--poplor);
+}
+.UplodeFilePDF{
+
+    display: flex;
+    width: 100%;
+    color: var(--whate);
+    width: 100%;
+    user-select: none;
+align-items: center;
+justify-content: center;
+}
+.itembtmAndStatus{
+
+    width: 70% ;
+    align-items: center;
+   
+
+}
+.btmUplodeFilePDF label{
+    display: flex;
+    color: var(--whate);
+    padding: 23px;
+    background-color: var(--blue3);
+    width: 70%;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    justify-content: center;
+
+}
+
+.btmUplodeFilePDF label:hover{
+    cursor: pointer;
+    background-color: var(--blue5);
+}
+.itemFile{
+    display: flex;
+
+  justify-content: center;
+  align-items: center;
+   height: 100%;
+   margin-left: 10%;
+  
+
+
+   
+
+
+}
+.FilePDF{
+     border-radius:  10px;
+     padding: 10px;
+    background-color: #0c6cb0;
+    
+
+}
+.FilePDF i {
+font-size: 40px;
+}
+.SVG{
+   font-size: 40px; 
+}
+.deleteFilePDF{
+margin: 5px;
+display: flex;
+align-items: end;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+.deleteFilePDF:hover{
+    color: red;
+    cursor: pointer;
+}
+
+.SelectDepartment{
+        margin: 10px;
+    color: var(--whate);
+    display: flex;
+    align-items: center;
+    margin-top: 18px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    user-select: none;
+
+}
+.frontSelectDepartment{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+       background-color: var(--dark-grey);
+       padding: 15px;
+       border-radius: 10px;
+       width: 96%;
+}
+[dir="rtl"].frontSelectDepartment i{
+    direction: ltr;
+    margin-left: -1%;
+    width: 80%;
+   
+  
+    
+}
+
+.frontSelectDepartment h1{
+    font-size: 24px;
+}
+.frontSelectDepartment i{
+    font-size: 30px;
+    margin-left: 5px;
+    direction: rtl;
+    width: 70%;
+    margin-left: 13%;
+}
+.chooseDepartment{
+    display: grid;
+       grid-template-rows: 0fr;
+       padding: 0px;
+       width: 97%;
+}
+.chooseDepartmentActev{
+    display: grid;
+    grid-template-rows: 1fr;
+    width: 95%;
+    margin-left: 10px;
+   border-top: 0px ;
+   border-radius: 0 0 10px 10px;
+    
+       
+}
+[dir="rtl"].chooseDepartmentActev .itemselectDepartmen h1{
+    border-right: 1px solid var(--whate);
+    border-left:none ;
+}
+.itemselectDepartmen:hover{
+   cursor: pointer;
+   background-color:#2a2a2d ;
+}
+.selectDepartmentItem{
+    width: 100%;
+     
+
+}
+.itemselectDepartmen{
+background-color: #1d1d21;
+border-top: 1px solid var(--whate);
+padding: 2px;
+
+}
+.lastitemi{
+    border-bottom: none;
+}
+.itemselectDepartmen h1{
+padding: 10px;
+border-left: 1px solid var(--whate);
+margin-left: 10px;
+font-size: 40px;
+color: var(--whate);
+}
+.CollectionChooseDepartmen{
+    padding: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+    align-items: center;
+   
+
+}
+.imagChooseDepartmen{
+    display: flex;
+    width: 80px;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+  
+}
+.imagChooseDepartmen img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--whate);
+
+}
+.ChoesLevelACT{
+display: grid;
+grid-template-rows: 1fr;
+width: 100%;
+ user-select: none;
+color: var(--whate);
+
+}
+.ChoesLevelNotACT{
+    display: grid;
+    grid-template-rows: 0fr;
+   
+}
+.SelectLevel{
+   
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    user-select: none;
+ 
+}
+.FrontSelectLevel{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--whate);
+    padding: 15px;
+    background-color: var(--dark-grey);
+    width: 96%;
+    border-radius: 10px;
+    margin: 10px;
+    margin-bottom: 0;
+}
+.FrontSelectLevel h1{
+    font-size: 27px;
+    
+}
+.FrontSelectLevel i{
+    font-size: 27px;
+    margin-left: -10px;
+}
+.ULChoeseLevel{
+ 
+    width: 97%;
+    margin: 0 17px;
+    padding-bottom: 10px;
+    border-radius: 2px;
+     cursor: pointer;
+   
+}
+.LiChoeseLevelLabel{
+       background-color: var(--brown);
+    padding: 20px;
+    width: 97%;
+    font-size: 22px;
+    border-top: 1px solid var(--whate);
+    display: block;
+    border-radius: 0 0 10px 10px;
+}
+[dir="rtl"]  .LiChoeseLevelLabel{
+   margin:  0 3%;
+}
+
+.LiChoeseLevelLabel:hover{
+cursor: pointer;
+   background-color:#2a2a2d ;
+}
+input[type='checkbox']:checked+.itemselectDepartmen{
+      background-color:#35353c ;
+        border-top: 1px solid var(--whate);
+
+}
+
+.LiChoeseLevelLabel:has(input[type="radio"]:checked){
+    background-color:#35353c ;
+}
+.SelectCourse{
+    user-select: none;
+}
+.FrontCourseSelect{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--dark-grey);
+    color: var(--whate);
+    width: 96%;
+    margin: 5px;
+    border-radius: 10px;
+    padding: 15px 10px;
+}
+.FrontCourseSelect h1{
+     font-size: 27px;
+}
+.FrontCourseSelect i{
+     font-size: 27px;
+}
+.ChoseCourseAct{
+display: grid;
+grid-template-rows: 1fr;
+width: 100%;
+ user-select: none;
+ margin-top: -5px;
+ 
+color: var(--whate);
+}
+.ChoseCourseNotAct{
+display: grid;
+grid-template-rows: 0fr;
+
+
+}
+.ChoeseCourseUL{
+    background-color: var(--brown);
+    width: 95%;
+    margin-left: 10px;
+    border-radius: 0 0 10px 10px;
+   
+}
+.ChoeseCourseLable{
+display: flex;
+border-top: 1px solid var(--whate);
+width: 100%;
+padding: 15px;
+}
+.ChoeseCourseLable:hover{
+    background-color: var(--dark-grey);
+}
+.ChoeseCourseLable:has(input[type='radio']:checked){
+background-color: var(--Select);
+}
+[dir="rtl"].ChoeseCourseLable h1{
+ 
+    margin: 0 24px;
+}
+.OtherPost{
+    width: 100%;
+
+}
+.BottomOther{
+    width: 98%;
+    margin: 10px;
+}
+.BottomOther button{
+     cursor: pointer;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--whate);
+    background-color: var(--blue4);
+}
+.BottomOther button:hover{
+    
+    background-color: var(--blue5);
+}
+.clock{
+    animation: clock 2s  ease-in infinite;
+    transition: 0.8;
+     cursor: progress;
+     
+}
+@keyframes clock {
+from{
+     transform: rotate(180deg);
+}
+to{
+     transform: rotate(360deg);
+}
+    
+}
+a{
+    color: var(--whate);
+}
+.Notes{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    background-color: var(--dark-grey);
+    margin-top: 30px;
+    width: 100%;
+    border-top: 1px solid var(--whate);
+   padding:10px 0 ;
+      user-select: none;
+}
+
+
+.NoteItem p span{
+    color: rgb(255, 71, 71);
+}
+.contact{
+    padding: 10px;
+    font-size: 23px;
+    display: flex;
+    color: var(--whate);
+    
+
+}
+.contact a{
+    margin: 0 5px;
+}
+.Main-Erorr{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ErorrPostdocement i{
+padding: 0 10px;
+      color: var(--Blue-Nght);
+}
+.ErorrPostdocement{
+    background-color: red;
+    width: 40%;
+    display: flex;
+    font-size: 22px;
+      color: white;
+    font-weight: 700;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}

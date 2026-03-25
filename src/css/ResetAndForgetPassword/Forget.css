@@ -1,0 +1,310 @@
+:root{
+    --Select:#35353C;
+    --brown:#1D1D21;
+    --blue5:#27374D;
+    --blue3:#091f2e;
+    ---blue2:#164465;
+    --whate:#F2F8Fc;
+    --poplor:#592093;
+    --blue:#2984c6;
+    --blue4:#065084;
+    --grey:#57595B;
+    --dark-grey:#2b2b2c;
+    --Blue-Nght:#0F172A;
+}
+
+.MainForgetPaassword{
+    background-color: var(--grey);
+    width: 100%;
+    height: 100vh;
+}
+.ForgetPassword{
+    user-select: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.Steps{
+
+width: 100%;
+
+
+}
+.itemSteps{
+    width: 100%;
+    display: flex;
+    list-style: none;
+    padding-top: 25px ;
+    margin: 0 70px;
+    justify-content: center;
+
+}
+.itemSteps li{
+    position: relative;
+    display: flex;
+     align-items: center;
+  padding-right: 200px;
+  
+}
+.itemSteps li::before{
+    content: "";
+    position: absolute;
+    background-color: var(--Blue-Nght);
+    height: 3px;
+    width: 100%;
+    top:50%;
+    transform: translateY(-50%);
+    z-index: 1;
+   
+}
+.itemSteps li:last-child::before{
+    display: none;
+}
+.circleSteps{
+    width: 50px;
+    height: 50px;
+    background-color: var(--dark-grey);
+    color: var(--whate);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    z-index: 2;
+      font-size: 22px;
+}
+.Cheack{
+    background-color: var(--Blue-Nght);
+    font-size: 24px;
+    color: var(--blue);
+}
+.Nocheack{
+       background-color: var(--dark-grey);
+    color: var(--whate);
+    font-size: 22px;
+}
+.StepsForgetPassword{
+    width: 100%;
+    height: 76%;
+    color: var(--whate);
+    display: grid;
+    grid-template-columns: 100% 0% 0% ;
+}
+.StepsForgetPasswordOne{
+grid-template-columns: 100% 0% 0% ;
+}
+.StepsForgetPasswordTwo{
+        grid-template-columns: 0% 100% 0% ;
+}
+.StepsForgetPasswordThree{
+     grid-template-columns: 0% 0% 100% ;
+}
+.StepOne{
+      width: 100%;
+    height: 76%;
+   
+
+}
+.itemStepOne{
+
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 100%;
+    margin:4% 20%;
+}
+.itemStepOne h4{
+    /* margin: 10px; */
+    font-size: 22px;
+       width: 80%;
+       text-align: center;
+}
+.itemStepOne input{
+       
+    margin: 5px;
+    width: 80%;
+    padding: 13px;
+    border: none;
+    outline: none;
+    background-color: var(--dark-grey);
+    color: var(--whate);
+    border-radius: 10px;
+}
+.itemStepOne button{
+        cursor: pointer;
+    width: 80%;
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: var(--Blue-Nght);
+    color: var(--whate);
+
+}
+ .StepOneNotActev{
+    visibility: hidden;
+    width: 0;
+     
+      
+
+ }
+ .StepTwoNotAct{
+        visibility: hidden;
+ width: 0;
+  
+ }
+ .StepThreeNotAct{
+        visibility: hidden;
+    width: 0;
+  
+ }
+ .StepTwo{
+    margin: 25px 39vh;
+    width: 60%;
+
+ }
+ .TitleSteptwo{
+text-align: center;
+
+ }
+ .TitleSteptwo i{
+
+color: var(--blue);
+   font-size: 60px;
+ }
+
+
+ .InputStep2{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    flex-direction: column;
+
+ }
+ .InputStep2 Input{
+   
+    width: 70%;
+    padding: 15px;
+    margin: 4px;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    background-color: var(--dark-grey);
+    color: var(--whate);
+    border-radius: 10px;
+
+ }
+
+.ButtonStp2 button{
+        cursor: pointer;
+margin: 10px;
+padding: 15px;
+    background-color: var(--Blue-Nght);
+        color: var(--whate);
+        border: none;
+        outline: none;
+        border-radius: 10px;
+}
+.ButtonStp2 button:first-child{
+    background-color: red;
+}
+.ErrorStep2{
+color: red;
+text-align: center;
+font-size: 35px;
+
+}
+.ErrorStep3{
+    margin-right: 35px;
+}
+.ErrorStep2 i p{
+    color: var(--whate);
+}
+.ErrorStep1{
+   margin-top: 10px;
+
+    text-align: center;
+    width: 80%;
+
+
+}
+.ErrorStep1 i{
+    color: red;
+    font-size: 35px;
+}
+.ErrorStep1 i p{
+    color: var(--whate);
+       font-size: 35px;
+}
+.StepThree{
+
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 100%;
+
+}
+.itemStepThree{
+    padding: 0 30px;
+    margin: 30px;
+    width: 50%;
+   
+
+
+}
+.itemStepThree h4{
+    margin: 5px;
+    font-size: 22px;
+}
+.itemStepThree input{
+    
+    outline: none;
+    border: none;
+    background-color: var(--dark-grey);
+    color: var(--whate);
+    width: 98%;
+    padding: 10px;
+    font-size: 22px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.BtmSteepthree{
+margin: 5px 25%;
+
+}
+.BtmSteepthree button{
+    width: 80%;
+        cursor: pointer;
+margin: 10px;
+padding: 15px;
+ background-color: red;
+outline: none;
+border: none;
+border-radius: 10px;
+color: var(--whate);
+}
+.BtmSteepthree button:hover{
+    background-color: darkred;
+}
+.hourglass_wate{
+    text-align: center;
+    width: 80%;
+    font-size: 40px;
+  
+}
+.hourglass_wate i{
+  color: var(--whate);  
+}
+.hourglass_wate_s2{
+    width: 103%;
+
+}
+.hourglass_wate_s3{
+
+  margin-right: 30px;
+}

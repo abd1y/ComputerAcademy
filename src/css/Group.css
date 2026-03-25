@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Science+Gothic:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*{
+
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    overflow: hidden;
+    transition: 0.6s;
+    text-decoration: none;
+    
+
+    
+}
+
+    .Groups{
+        display: flex; /* none or flex*/
+        flex-wrap: wrap;
+    overflow-y: visible;
+    scrollbar-width: none;
+    height:80vh;
+    user-select: none;
+     
+
+
+
+
+    }
+.Group{
+      cursor: pointer;
+    width: 30%;
+    min-height: 50%;
+    max-height: 100%;
+    border: 1px solid rgb(44, 44, 44);
+    margin: 10px;
+    height: 20em;
+    border-radius: 10%;
+    background-color: #533425;
+    color: var(--whate);
+}
+.infoOwner{
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+   
+
+}
+.infoOwner h2{
+    margin-bottom:10px ;
+  
+}
+.InfoDr h4,p{
+    margin: 8px;
+    color: rgba(255, 255, 255, 0.55);
+}
+.GroupEmpty{
+    display: none;/* none or flex*/
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+       user-select: none;
+}
+.GroupEmpty i{
+    margin-bottom: 20px;
+    font-size: 10em;
+    color:var(--blue);
+}
+.GroupEmpty h1{
+    color: var(--whate);
+    font-family:'ADLaM';
+    font-size: 40px;
+}
+.GroupEmpty h2{
+    text-align: center;
+      color: rgb(222, 216, 216);
+}
+.lodeingHome{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+     justify-content: space-around;
+     user-select: none;
+     margin-top: 20px;
+
+}
+.lode{
+    background:linear-gradient(to right,var(--dark-grey)0%,var(--grey)50%,var(--dark-grey)100%);
+    background-size: 200% 100%;
+    padding: 5px 10%;
+    height: 15em;
+    width: calc(40%/5);
+    border-radius: 10px;
+    margin: 30px;
+    animation: lode 4s ease infinite;
+   
+}
+@keyframes lode {
+    from{
+         background-position: 200% 0;
+    }to{
+          background-position: -200% 0;
+    }
+
+}
+.errorHome{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    
+}
+.errorHomeItam{
+    
+    width: 100%;
+    height: 100%;
+    padding: 100px;
+    /* margin-top: -13%; */
+   
+    
+}
+.ErrorItamMesLogo{
+    font-size: 10em;
+   color: #ff1e00;
+ 
+    
+}
+.errorHome h1{
+margin-bottom: 10px;
+    font-size: 50px;
+    color: #de8c81;
+}
+.errorHome button{
+    border: none;
+    background-color:#eb4833;
+    color: var(--whate);
+    padding: 15px;
+    width: 10%;
+    border-radius: 20px;
+    font-size: 20px;
+}
+.errorHome button:hover{
+    background-color:#b13c2c;
+}
+.imagLogo{
+    width: 100%;
+    height: 56%;
+   
+}
+.imagLogo img{
+    width: 100%;
+     object-fit: cover;
+    height: 100%;
+    
+}

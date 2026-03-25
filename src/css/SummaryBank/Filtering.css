@@ -1,0 +1,244 @@
+
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Science+Gothic:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+
+
+.itemFilter{
+    display: none;
+    user-select: none;
+
+}
+.itemFilteractive{
+  overflow-y: auto;
+display: flex;
+          width: 100%;
+           height: 80vh;
+           scrollbar-width: none;
+        
+       
+}
+.content{
+    background-color: #314453;
+     width: 100%;
+     height: 90vh;
+     overflow-y: auto;
+     scrollbar-width: none;
+
+}
+.Department{
+    display: flex;
+     width: 100%;
+     height: 30vh;
+     
+}
+.titleDepartment {
+    text-align: start;
+    width: 20%;
+    color: var(--whate);
+    padding: 22px 5px;
+    height: 20vh;
+    margin-top: 20px;
+    border-right: 1px solid rgb(255, 255, 255);
+    
+}
+
+.department{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    color: var(--dark-grey);
+    align-items: center;
+    border-radius: 10px;
+
+   
+    
+}
+.department:hover{
+     background-color: rgba(255, 255, 255, 0.644);
+}
+.shortDeportment{
+    width: 70%;
+    border-left: 1px solid var(--dark-grey);
+}
+.Department ul{
+    margin: 10px;
+    width: 100%;
+
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr;
+
+  
+    
+}
+.firstdeportment{
+    display: none;
+}
+.Department ul li {
+     cursor: pointer;
+    color: var(--whate);
+    width: 50vh;
+    padding: 5px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+   
+}
+
+.imageDepartment{
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+   
+   
+}
+.imageDepartment img{
+    
+    width: 40px;
+    height: 40px;
+ 
+}
+
+.Level{
+  display: flex;  
+  align-items: center;
+
+
+}
+.LevelClass{
+    width: 18%;
+    text-align: center;
+        color: var(--whate);
+    padding: 20px;
+    margin-top: 20px;
+    border-right: 1px solid rgb(255, 255, 255);
+    
+}
+
+
+.LevelFilter{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    margin: 10px;
+    color: var(--whate);
+    width: 90%;
+    justify-content: center;
+}
+.lifilterLever{
+
+    display: block  ;
+    justify-content: center;
+    width: 90%;
+ 
+}
+.LevelFilter .lifilter{
+    display: flex;
+    font-weight: 700;
+    color: var(--dark-grey);
+    font-size: 22px;
+    width: 70%;
+    padding: 15px;
+    padding-right: 25px;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+     cursor: pointer;
+    
+    
+    
+}
+.LevelFilter .lifilter h5{
+ font-weight: 700;
+    color: var(--dark-grey);
+    font-size: 22px;
+    
+}
+.LevelFilter .lifilter:hover{
+     background-color: rgba(255, 255, 255, 0.644);
+ 
+}
+
+.Course{
+display: flex;
+align-items: center;
+justify-content: center;
+margin-top: 10px;
+}
+.CourseClass{
+    width: 17%;
+    text-align: center;
+            color: var(--whate);
+    padding: 20px;
+  
+    margin-top: 20px;
+    border-right: 1px solid rgb(255, 255, 255);
+
+}
+
+.Course ul{
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 1fr 1fr ;
+    width: 70%;
+    height: 10vh;
+    margin-left: 15%;
+}
+.Course ul li{
+   
+    width: 216px;
+    border-radius: 20px;
+
+}
+.CourseBtm{
+    font-size: 22px;
+    font-weight: 700;
+    display: block;
+    background-color: var(--whate);
+    width: 190px;
+    height: 50px;
+    text-align: center;
+   padding: 10px;
+    border-radius: 15px;
+    margin-top: 5px;
+     cursor: pointer;
+
+    
+}
+.CourseBtm:hover{
+     background-color: rgba(255, 255, 255, 0.644);
+}
+
+input[type='checkbox']:checked+.department,input[type='checkbox']:checked+.lifilter,input[type='checkbox']:checked+.CourseBtm{
+    background-color: var(--blue3);
+    color: var(--whate);
+   
+}
+.btmapplyandreset{
+   
+    /* height: 30vh; */
+    display: flex;
+    justify-content: end;
+    margin-top: -13px;
+}
+.btmapplyandreset button{
+     cursor: pointer;
+    height: 6vh;
+    /* margin-top: -5px; */
+    margin-right: 20px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: var(--whate);
+    background-color: var(--blue);
+    font-weight: 700;
+    
+}
+
+.btmapplyandreset button:hover{
+    background-color: #0c6cb0;
+}

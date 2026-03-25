@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+
+
+.CreatGrop{
+    background-color: var(--grey);
+    width: 100%;
+    height: 90vh;
+     overflow-y: auto;
+     scrollbar-width: none;
+}
+.BackButton{
+    display: flex;
+    padding: 20px;
+
+}
+.clickHome{
+
+    color: var(--whate);
+    font-size: 23px;
+    background-color: var(--dark-grey);
+    padding: 14px;
+    border-radius: 50%;
+}
+.NameGroup{
+ font-family: "Tajawal", sans-serif;
+    color: var(--whate);
+    padding: 20px;
+    user-select: none;
+    
+}
+.NameGroup h1{
+    font-size: 27px;
+    margin-bottom: 5px;
+  
+}
+.NameGroup input{
+     font-family: "Tajawal", sans-serif;
+    outline: none;
+    color: white;
+    background-color: var(--dark-grey);
+    border: none;
+    padding: 13px;
+    width: 98%;
+    border-radius: 5px;
+    font-size: 18px;
+}
+.SelectLevelGroup{
+    margin: 10px 2px;
+}
+.TitleSelectLevel{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--whate);
+    user-select: none;
+    background-color: var(--dark-grey);
+    width: 97%;
+    margin: 0 10px;
+    padding: 7px;
+    border-radius: 10px;
+    
+}
+.TitleSelectLevel h1{
+font-size: 30px;
+ font-family: "Tajawal", sans-serif;
+}
+.ChooseLevelGroup{
+       display: grid;
+    user-select: none;
+    width: 95%;
+    background-color: var(--brown);
+    margin: 0 2%;
+    border-radius: 0 0 10px 10px ;
+    
+}
+
+.ChooseLevelGroupAccept{
+     display: grid;
+     grid-template-columns: 1fr;
+      height: 43vh;
+}
+.ChooseLevelGroupNotAccept{
+  display: grid;
+     grid-template-columns: 0fr;
+      height: 0vh;
+}
+.ChooseLevel{
+ border-bottom:1px solid var(--whate) ;
+}
+.ChooseLevel:last-child{
+    border-bottom: none;
+}
+.ChooseLevelLable{
+    display: flex;
+  
+}
+
+.ChooseLevelLable p{
+    font-weight: 600;
+    padding: 7px;
+    font-size: 22px;
+    color: var(--whate);
+     font-family: "Tajawal", sans-serif;
+    
+}
+.ChooseLevelLable:hover{
+   cursor: pointer;
+   background-color:#2a2a2d ;
+}
+.ChooseLevelLable:has(input[type="radio"]:checked){
+background-color: var(--Select);
+}
+.ButtonCreat{
+
+    margin: 10px 25px;
+    height: 20vh;
+}
+.ButtonCreat button{
+    font-size: 17px;
+     font-family: "Tajawal", sans-serif;
+    border: none;
+    outline: none;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: var(--blue4);
+    color: var(--whate);
+     cursor: pointer;
+}
+.ButtonCreat button:hover{
+    background-color: var(---blue2);
+}
+.notes{
+    border-top: 1px solid var(--whate);
+    background-color: var(--brown);
+    height: 25vh;
+    padding: 10px;
+   user-select: none;
+}
+
+span{
+
+    color: red;
+}
+.Erorr-creat-groups{
+    user-select: none;
+    text-align: center;
+    padding: 10px;
+    color: red;
+    font-size: 10px;
+}
+.Erorr-creat-groups i{
+    font-size: 20px;
+    color: #000000;
+}
+.anmation-loding{
+    animation: lodingCreat 0.7s ease-in infinite;
+}
+@keyframes lodingCreat {
+    from{
+        transform: rotate(0deg);
+    }to{
+ transform: rotate(360deg);
+    }
+}
