@@ -388,11 +388,19 @@ color: var(--whate);
     font-size: 22px;
     padding: 10px 2px;
 }
-.item-coment-for-user p{
+.item-coment-for-user p:not(.Delete-commit){
     user-select: text;
     color: var(--whate);
     font-size: 20px;
     font-weight: 200;
+}
+.Delete-commit{
+    font-size: 15px;
+    color: rgb(240, 61, 61);
+}
+.Delete-commit:hover{
+    cursor: pointer;
+    color: red;
 }
 /*  Post Groups */
 .The-Post{

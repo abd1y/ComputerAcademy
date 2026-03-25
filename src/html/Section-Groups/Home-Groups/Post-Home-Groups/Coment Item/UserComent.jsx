@@ -1,7 +1,10 @@
 import React from 'react'
 import images from '../../../../../assets/images.png'
 import { Link } from 'react-router-dom'
+
 export default function UserComent({comment}) {
+  const data_save=JSON.parse(localStorage.getItem("data"))
+  const id=data_save.id
   return (
     <>
   
@@ -21,6 +24,8 @@ comment.map((item_comment)=>(
 <h3>{item_comment.member_name}</h3>
   </Link>
 <p> {item_comment.content}</p>
+
+<p className='Delete-commit' style={{display:id===item_comment.user_id?"block":"none"}}>Delete</p>
 </div>
 </div>
 ))
