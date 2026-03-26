@@ -15,6 +15,15 @@
   import { useTranslation } from 'react-i18next';
 
   function App() {
+    useEffect(() => {
+    const meta = document.querySelector('meta[name="viewport"]');
+    if (meta) {
+      meta.setAttribute(
+        "content",
+        "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+      );
+    }
+  }, []);
     const Language=localStorage.getItem("Lag")
     const {i18n}=useTranslation()
 const changeLang = (lang) => {
