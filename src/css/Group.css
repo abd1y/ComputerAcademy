@@ -123,7 +123,6 @@
     width: 100%;
     height: 100%;
     padding: 100px;
-    /* margin-top: -13%; */
    
     
 }
@@ -160,4 +159,45 @@ margin-bottom: 10px;
      object-fit: cover;
     height: 100%;
     
+}
+@media (max-width:480px){
+  .Group{
+    width: 100%;
+    margin-bottom: 10px;
+  }  
+  .lodeingHome{
+    display: block;
+  }
+  .lode{
+    width: 90%;
+     margin: 15px;
+  }
+  .GroupEmpty{
+     justify-content: start;
+     margin-top: 20%;
+  }
+  .GroupEmpty h1{
+    justify-content: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  .GroupEmpty h2{
+    font-size: 20px;
+  }
+  .GroupEmpty i{
+    margin-bottom: 10px;
+}
+.ErrorItamMesLogo{
+   font-size: 6em;
+}
+.errorHome h1{
+    font-size: 30px;
+}
+.errorHome button{
+    width: 50%;
+    font-size: 30px;
+}
+.errorHome button:hover{
+        background-color:#eb4833;
+}
 }

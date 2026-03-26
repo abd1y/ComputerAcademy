@@ -160,5 +160,53 @@ nav{
     background-color: #2b2b2c;
     font-size: 26px;
 }
+/* Mobile */
+@media (max-width:480px) {
+    .Logo-header{
+        width: 100%;
 
+    }
+    .Logo-header img{
+        width: 25%;
+    }
+    .Logo-header h4{
+        font-size: 20px;
+        width: 33%;
+
+    }
+    .main{
+     display: flex;
+      flex-direction: column-reverse;
+    height: 100vh;
+
+    }
+.Hoverin{
+  display: flex;
+      flex-direction: column-reverse;
+    height: 100vh;
+}
+.nav{
+    height: 46%;
+}
+.nav ul{
+    width: 58%;
+    display: flex;
+}
+.titleNav{
+    display: none;
+}
+.item{
+    flex: 1;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     border-bottom:none;
+}
+.item:hover:not(.active){
+    padding: 15px;
+    background-color: rgba(255, 0, 0, 0);
+
+}
+}
 

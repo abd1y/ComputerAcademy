@@ -12,7 +12,10 @@ let Titelitem=document.querySelectorAll('.titleNav')
         Titelitem.forEach(title=>{
             title.style.visibility='visible'
             title.style.display='flex'
-    
+    if (window.innerWidth < 480) {
+       title.style.display='none'
+       
+    }
               
         })
         

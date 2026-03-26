@@ -30,6 +30,7 @@
     align-items: start;
     width: 100%;
     height:50%;
+    
 
 
     
@@ -132,4 +133,16 @@ font-weight: bold;
     to{
         color: rgba(255, 255, 255, 0.555);
     }  
+}
+@media (max-width:480px){
+.buttonGroups{
+    height: 70%;
+}
+.Caption h2{
+    font-size: 30px;
+}
+.Caption p{
+   font-size: 15px;
+}
+
 }

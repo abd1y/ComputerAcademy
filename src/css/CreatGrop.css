@@ -162,3 +162,14 @@ span{
  transform: rotate(360deg);
     }
 }
+@media (max-width:480px){
+.ChooseLevelGroup{
+    margin: 0 4%;
+
+}
+.ChooseLevelGroupAccept{
+    height: 60%;
+}
+
+
+}
