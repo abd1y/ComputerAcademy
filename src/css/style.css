@@ -196,7 +196,6 @@ nav{
     display: none;
 }
 .item{
-    height: 100%;
     padding: 15px;
     display: flex;
     width: calc(110%/5);

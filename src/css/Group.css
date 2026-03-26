@@ -163,6 +163,7 @@ margin-bottom: 10px;
 @media (max-width:480px){
       .Groups{
         height: 73vh;
+       padding-bottom: 30px;
       }
   .Group{
     width: 100%;
