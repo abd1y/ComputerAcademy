@@ -198,7 +198,7 @@ nav{
 .item{
     padding: 15px;
     display: flex;
-    width: calc(100%/5);
+    width: calc(110%/5);
     justify-content: center;
     align-items: center;
      border-bottom:none;
