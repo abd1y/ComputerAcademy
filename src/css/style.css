@@ -117,7 +117,6 @@ nav{
    
     background-color: #57595B;
 
-
 }
 .nav{
     margin: 0;
@@ -127,10 +126,7 @@ nav{
 
 }
 .nav ul{
-  display: flex;            
-  gap: 20px;                 
-  overflow-x: auto;         
-  scroll-behavior: smooth; 
+ 
     width: 100%;
     user-select: none;
     
@@ -195,14 +191,14 @@ nav{
     height: 40%;
 }
 .nav ul{
-    width: 60vh;
+    width: 50vh;
     display: flex;
 }
 .titleNav{
     display: none;
 }
 .item{
-    flex: 1;
+    flex: 1 1 30%;
     padding: 15px;
     display: flex;
     justify-content: center;
