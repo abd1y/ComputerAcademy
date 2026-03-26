@@ -7,6 +7,7 @@ export default function ChangImag({Imagprofile,setImagprofile}) {
       const {t}=useTranslation()
     const [image, setImage] = useState(Imagprofile || defaultImage);
     useEffect(() => {
+      
   if (Imagprofile && typeof Imagprofile === 'string') {
     setImage(Imagprofile);
   }

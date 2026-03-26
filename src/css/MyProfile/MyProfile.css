@@ -99,10 +99,12 @@ color: #24eaa8;
 }
 
 .BioProfile{
-
-    justify-content: start;
+justify-content: start;
 width: 100%;
+height: 50%;
 display: flex;
+flex-direction: row;
+
 }
 .BioProfile p{
     color: var(--whate);

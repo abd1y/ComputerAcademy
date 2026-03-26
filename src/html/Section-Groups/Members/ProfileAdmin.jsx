@@ -8,7 +8,7 @@ const ProfileAdmin = ({item}) => {
     <div className=' Profile-admin' key={item.id}>
         
                  <div className='Profile-logo'>
-        <img src={`http://127.0.0.1:8000/${item.Profile_image}`} />
+        <img src={`https://abdullih123.pythonanywhere.com/${item.Profile_image}`} />
       </div>
       <div className="Name-member">
         <p>{item.Name}</p>
