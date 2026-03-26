@@ -21,8 +21,6 @@
       if(Language){
 
         i18n.changeLanguage(Language) 
-      }else{
-        i18n.changeLanguage("en") 
       }
   },[])
     return (
