@@ -124,3 +124,23 @@ font-size: 14px;
         background-position: -200% 0;
     }
 }
+@media screen and (max-width:767px){
+.TheLogoDocement{
+width: 90px;
+
+}
+.TheLogoDocement img{
+    width: 90px;
+    height: 80px;
+    margin-top: 100%;
+}
+.TheDocements{
+    height: 55vh;
+}
+.NameDoce{
+    font-size: 10px;
+}
+.Categre ul{
+    flex-direction: column;
+}
+}

@@ -48,3 +48,21 @@
  .buttenSummry button:hover{
     background-color: #2371a9;
 }
+
+@media screen and (max-width:767px){
+    .FilterAndPost{
+        flex-direction: column;
+        height: 20vh;
+        
+    }
+    .buttenSummry{
+    width: 100%;
+    }
+     .buttenSummry .buttenSummarypost:hover{
+          background-color: #164465;
+     }
+     .buttenSummry button:hover{
+         background-color: #2984c6;
+     }
+
+}
