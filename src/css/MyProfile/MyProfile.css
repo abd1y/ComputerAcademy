@@ -265,6 +265,7 @@ background-size: 200% 100%;
     }
 }
 .MsgNoPostDoement{
+    user-select: none;
     display: flex;
     flex-direction: column;
     width: 100%;
