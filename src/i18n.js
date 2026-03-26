@@ -22,6 +22,12 @@ i18n
   .init({
     fallbackLng: 'en',
     debug: true,
+     detection: {
+      order: ['localStorage'], // فقط اقرأ من localStorage
+    caches: ['localStorage'], // خزّن فيه
+    lookupLocalStorage: 'Lag'
+     
+  },
    backend: {
      
       loadPath: '/ComputerAcademy/locales/{{lng}}/{{ns}}.json'

@@ -17,12 +17,10 @@
   function App() {
     const Language=localStorage.getItem("Lag")
     const {i18n}=useTranslation()
-    useEffect(()=>{
-      if(Language){
-
-        i18n.changeLanguage(Language) 
-      }
-  },[])
+const changeLang = (lang) => {
+  i18n.changeLanguage(lang);
+  localStorage.setItem("Lag", lang);
+};
     return (
       <Routes>
       <Route path="/" element={<IndexPage/>} />
