@@ -240,7 +240,7 @@ input[type='checkbox']:checked+.department,input[type='checkbox']:checked+.lifil
 }
 @media screen and (max-width:767px){
 .content{
-    height: 66%;
+    height: 70%;
 }
 .Department{
     flex-direction: column;
@@ -303,5 +303,9 @@ flex-direction: column;
 }
 .Course ul li{
     width: 100%;
+}
+.btmapplyandreset button{
+    margin-top: 20px;
+    margin-bottom: 35px;
 }
 }
