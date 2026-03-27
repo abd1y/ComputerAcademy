@@ -266,6 +266,7 @@ max-width: 800px;
     border-radius: 10px;
 }
 .Rght-pdf{
+    display: none;
     color: var(--whate);
 margin: 0 10px;
 font-size: 22px;
@@ -586,7 +587,6 @@ scrollbar-width: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -25px;
 }
 .ErorrMsg p{
     background-color: red;
@@ -799,3 +799,33 @@ cursor: pointer;
     align-items: center;
     font-size: 22px;
 }
+@media screen and (max-width:767px){
+    .Post-Card-Group{
+        width: 97%;
+        margin: 2% 2%;
+    }
+    .image-profile-Loding{
+        width: 100%;
+        margin: 20px 0;
+    }
+    .play-video{
+        width: 200px;
+    }
+    .rang{
+        width: 70%;
+    }
+
+    .TimeVideo{
+        width: 200px;
+    }
+    .Full-Screen{
+        width: 50px;
+    }
+    .Icon-pdf{
+        width: 20%;
+    }
+    .Rght-pdf{
+        display: none;
+    }
+    }
+

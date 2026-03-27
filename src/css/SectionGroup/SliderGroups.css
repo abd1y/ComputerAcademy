@@ -29,6 +29,10 @@ display: flex;
     color: var(--whate);
 }
 .selec-item{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
     border-radius: 2px;
     text-align: center;
     height: 13vh;
@@ -57,4 +61,11 @@ border-left: 1px solid var(--Select);
         
 }
 
-
+@media screen and (max-width:767px){
+    .selec-item{
+        font-size: 26px;
+    }
+    .selec-item p{
+        display: none;
+    }
+}

@@ -14,7 +14,7 @@ export default function Pdf({LinkVideo}) {
             </div>
            
             <div className='Title-Pdf'><p>PDF Flie</p>  
-            <a href={LinkVideo} download title={t('Download File')}> {t("Downlod Pdf")}</a>
+            <a href={LinkVideo} download title={t('Show File')}> {t("Show Pdf")}</a>
             </div>
           
         </div>
