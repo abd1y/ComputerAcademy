@@ -158,5 +158,6 @@
    "Password not matched":"تأكيد كلمة المرور غير مطابق",
    "No posts have been published.":"لا توجد اي منشورات منشوره ",
    "Delete the group":"حذف المجموعه",
-   "This user does not have any published document.":"المستخدم لا يمتلك اي ملفات منشوره"
+   "This user does not have any published document.":"المستخدم لا يمتلك اي ملفات منشوره",
+   "Please wait":"الرجاء الانتظار"
 }
