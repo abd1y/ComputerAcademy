@@ -38,16 +38,12 @@
    font-family: "Open Sans", sans-serif;
     
 }
-[dir="rtl"].Changs{
-margin-left: 20px;
-}
-[dir="rtl"].Changs input{
-border-radius: 10px;
-}
+
 [dir="rtl"].Changs .eyePassword{
  margin-right: 97%;
     padding-top: 15px;
 }
+
 [dir="rtl"].ChangPassword p{
     direction: ltr;
 }
@@ -76,6 +72,7 @@ border-radius: 10px;
     height: 30vh;
     margin: 10px;
     resize: none;
+    direction: ltr;
 }
 
 .ChangeBio h1{
@@ -101,6 +98,8 @@ border-radius: 10px;
     border-radius: 5px;
     font-family: "Open Sans", sans-serif;
     font-weight: 600;
+
+    text-align: left;
 }
 .Changs input::selection{
     background-color: var(--poplor);
@@ -108,8 +107,8 @@ border-radius: 10px;
 .ChangPassword p{
     color: rgba(0, 188, 245, 0.961);
    width: 100%;
-   direction: rtl;
    cursor: pointer;
+
 }
 
 .ChanPass{
@@ -195,11 +194,9 @@ justify-content: center;
 .Otheritem{
     margin: 15px;
     margin-top: 5px;
-    padding: 30px;
    width: 100%;
    display: flex;
    flex-direction: column;
-   margin-left: -20px;
  
     
 }
@@ -209,8 +206,7 @@ justify-content: center;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
-    /* margin: 0 20px; */
+    width: 98%;
     padding: 10px;
     border-radius: 15px;
 
@@ -333,4 +329,34 @@ justify-content: center;
   0% { opacity: 1; }
   80% { opacity: 1; } 
   100% { opacity: 0; display: none; } 
+}
+@media screen and (max-width:767px){
+#buttonImagProfile{
+
+    width: 15%;
+}
+
+.eyePassword{
+    margin-left: 87%;
+}
+[dir="rtl"].Changs .eyePassword{
+    margin-right: 90%;
+}
+.ItemtitleSelectLanguage{
+    width: 90%;
+}
+.ChoiseLsnguageACT{
+    width: 87%;
+    height: 16%;
+}
+.ChangPassword p{
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+[dir="rtl"].ChangPassword p{
+    direction: rtl;
+}
+.Otheritem{
+    margin-bottom: 60px;
+}
 }

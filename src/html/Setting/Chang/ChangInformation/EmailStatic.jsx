@@ -7,6 +7,7 @@ export default function EmailStatic({email}) {
     <div className='Changs' dir={i18n.language==='en'?"ltr":'rtl'}>
             <h4 >{t('Email')}:</h4>
       <input  
+      
       value={email}
       type="email"
       readOnly

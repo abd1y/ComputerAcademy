@@ -23,20 +23,30 @@ if (cheack){
 }
 
     return (
-    <>
-           <h4>{t('Password: ')}</h4>
-      <input  ref={pasRef} 
-      type={cheack?"password":"text"}
-      onChange={e=>setPassword(e.target.value)}
-       />
-       <div className='eyePassword' dir={i18n.language==='en'?"rtl":"ltr"}>
-       <i ref={eyeRef} className="ri-eye-close-line" id='eyePassword' onClick={showPassword}></i>
-       </div>
-       <Link to={'/Forget-password'}>
-       <div className='ForgetPasswordSys'>
-       <p >  {t("Forget Password")}</p>
+      <>
+        <h4>{t("Password: ")}</h4>
+        <input
+          ref={pasRef}
+          type={cheack ? "password" : "text"}
+          onChange={(e) => setPassword(e.target.value)}
+           style={{textAlign:i18n.language==="en"?"left":"right"}}
+        />
+        <div
+          className="eyePassword"
+          dir={i18n.language === "en" ? "rtl" : "ltr"}
+        >
+          <i
+            ref={eyeRef}
+            className="ri-eye-close-line"
+            id="eyePassword"
+            onClick={showPassword}
+          ></i>
         </div>
-       </Link>
-    </>
-  )
+        <Link to={"/Forget-password"}>
+          <div className="ForgetPasswordSys">
+            <p> {t("Forget Password")}</p>
+          </div>
+        </Link>
+      </>
+    );
 }

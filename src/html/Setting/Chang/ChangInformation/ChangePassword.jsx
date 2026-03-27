@@ -12,6 +12,7 @@ const {t,i18n}=useTranslation()
        
    <h4 >{t('Change Password:')}</h4>
       <input 
+        style={{textAlign:i18n.language==="en"?"left":"right"}}
       type="text"
       onChange={e=>setChangePassword(e.target.value)}
        />
@@ -20,6 +21,7 @@ const {t,i18n}=useTranslation()
        
         <h4 > {t('Confirm Password: ')} </h4>
       <input 
+       style={{textAlign:i18n.language==="en"?"left":"right"}}
       type="text"
       onChange={e=>setConfirmPassword(e.target.value)}
        />

@@ -8,6 +8,7 @@ export default function ChangName({name,setname}) {
       <div className='ChangName Changs' dir={i18n.language==="en"?"ltr":"rtl"}>
         <h4> {t('Name')}:  </h4>
       <input 
+      style={{textAlign:i18n.language==="en"?"left":"right"}}
       type="text"
        value={name}
        onChange={(e)=>setname(e.target.value)}
