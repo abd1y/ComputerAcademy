@@ -13,7 +13,7 @@ export default function StepThree({step}) {
         setLoding(true)
         seterorr(false)
         API.put('auth/For-get-password_Step3/',{
-            email:localStorage.getItem("email"),
+            email:localStorage.getItem("email_forgetPassword"),
             password:Password,
             Confirm_password:Confirm_password
         })
@@ -27,6 +27,7 @@ export default function StepThree({step}) {
         .catch(err=>{
             setLoding(false)
             seterorr(true)
+            console.log(err.response)
         })
 
       }
