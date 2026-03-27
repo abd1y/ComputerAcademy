@@ -291,6 +291,7 @@ background-size: 200% 100%;
     font-size: 50px;
     color: var(--blue);
 }
+
 @media screen and (max-width:767px){
     .ButtinBackHome{
         margin: 0;
