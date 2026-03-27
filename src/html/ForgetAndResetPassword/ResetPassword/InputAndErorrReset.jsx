@@ -1,6 +1,7 @@
 import {useState} from 'react'
 import { useTranslation } from 'react-i18next'
   import {useNavigate } from 'react-router-dom'
+  
 import API from '../../Axios'
 export default function InputAndErorrReset() {
         const {t}=useTranslation()
@@ -60,7 +61,7 @@ disabled={wate?true:false}
 
         <i class="ri-hourglass-2-line"></i>
         </div>
-        <p> Please wait</p>
+        <p> {t("Please wait")}</p>
       </div>
     </div>
   )
