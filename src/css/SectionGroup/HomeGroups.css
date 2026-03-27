@@ -809,10 +809,10 @@ cursor: pointer;
         margin: 20px 0;
     }
     .play-video{
-        width: 200px;
+        width: 60px;
     }
     .rang{
-        width: 70%;
+        width: 90%;
     }
 
     .TimeVideo{
@@ -825,6 +825,9 @@ cursor: pointer;
         width: 20%;
     }
     .Rght-pdf{
+        display: none;
+    }
+    .clickVideo{
         display: none;
     }
     }

@@ -64,6 +64,8 @@ border-left: 1px solid var(--Select);
 @media screen and (max-width:767px){
     .selec-item{
         font-size: 26px;
+        align-items: start;
+        height: 10vh;
     }
     .selec-item p{
         display: none;
