@@ -12,6 +12,7 @@ const [data,setdata]=useState([])
 const email=localStorage.getItem('email')
 const cheackCodehandler=()=>{
   iswate(true)
+    seterorr(false)
   API.post(`auth/Reset-password/?email=${email}`,{
    code:code
   }
@@ -26,7 +27,7 @@ const cheackCodehandler=()=>{
   )
   .catch(err=>{
 
-    iswate(true)
+    iswate(false)
 seterorr(true)
   }
   )
