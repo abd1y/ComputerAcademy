@@ -447,8 +447,13 @@ scrollbar-width: none;
     width: 220dvh;
     justify-content: center;
 }
-.Label-input-file{
+   .File{
+        width: 100%;
+        
+    }
 
+.Label-input-file{
+    width: 100%;
     display: flex;
 
 
@@ -456,12 +461,15 @@ scrollbar-width: none;
     margin-bottom: 40px;
 }
 .Label-input-file p{
+    margin: 0 20px;
+      width: 96%;
     padding: 16px;
     border-radius: 10px;
     font-size: 22px;
     background-color: var(--Blue-Nght);
     color: var(--whate);
     cursor: pointer;
+    text-align: center;
 }
 .Label-input-file p:hover{
     background-color:#15213d
@@ -830,5 +838,76 @@ cursor: pointer;
     .clickVideo{
         display: none;
     }
+    .Title-Post{
+        width: 100%;
+        padding: 10px 0;
+    }
+    .Title-Post textarea{
+    margin: 0px;
+    }
+    .input-file{
+        width: 100%;
+
+    }
+    .File{
+        width: 100%;
+        
+    }
+        .Label-input-file{
+            width: 100%;
+            margin-bottom: 10px;
+        }
+    .Label-input-file p{
+        width: 97%;
+    }
+    .Label-input-file p:hover{
+  background-color: var(--Blue-Nght);
+}
+.Uplode-File-PDF{
+    width: 100%;
+}
+.logo-imag-pdf{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 130px;
+
+}
+.logo-imag-pdf img{
+    width: 100px;
+    height: 100px;
+}
+.info-PDF h4{
+    font-size: 16px;
+}
+.info-PDF button{
+    width: 50%;
+}
+.Delet-item i:hover{
+    color: var(--whate);
+}
+.Delete-items-image:hover{
+        color: wheat;
+}
+.File-types video{
+    width: 300px;
+    height: 300px;
+margin-left: 30px;
+}
+.Delete-item-video{
+    margin-top: 50px;
+    margin-right: 30px;
+}
+.Delete-item-video:hover{
+    color: wheat;
+}
+.Btm-Post button{
+    margin: 15px 3px;
+width: 97%;
+}
+.Btm-Post button:hover{
+      background-color: var(--blue);
+}
     }
 

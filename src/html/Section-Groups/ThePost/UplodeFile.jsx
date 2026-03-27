@@ -43,6 +43,13 @@ else if(file.type.toLowerCase().startsWith("application/pdf")){
   return (
     <div className='uplode-file'>
       <div className='File'>
+        <div className='input-file'>
+
+        <label className='Label-input-file'>
+            <p> {t("Uplode File")}</p>
+
+        <input type='file' ref={DeletItemRef} onChange={handlerFile} accept='.png,.jpg,.pdf,.mp4,.mov' hidden/>        </label>
+               </div>
         <div className='File-types'>
             {
             FileType==="image" && (<><img src={File}></img>   <i class="ri-close-circle-fill Delete-items-image" title={t("delete the image")} onClick={delethandler}></i></>)
@@ -57,13 +64,7 @@ else if(file.type.toLowerCase().startsWith("application/pdf")){
 
 
 
-        <div className='input-file'>
-
-        <label className='Label-input-file'>
-            <p> {t("Uplode File")}</p>
-
-        <input type='file' ref={DeletItemRef} onChange={handlerFile} accept='.png,.jpg,.pdf,.mp4,.mov' hidden/>        </label>
-               </div>
+        
       </div>
     </div>
   )
