@@ -128,7 +128,7 @@ SetErorr(errorArr)
     const cleanItem = item.replace(/\s+/g, ' ').trim();
 
     return (
-      <p key={index} style={{ display: isErorr ? "block" : "none" }}>
+      <p key={index} className='ErrorSingup' style={{ display: isErorr ? "block" : "none" }}>
         <span >* </span>
         {t(cleanItem)} 
       </p>

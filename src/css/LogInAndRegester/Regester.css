@@ -100,9 +100,30 @@ spin{
 .ErrorSingup{
       margin-top: -2px;
     cursor: auto;
-    color: rgb(255, 0, 0);
+    background-color: red;
+    color: var(--whate);
+    padding: 10px;
+    border-radius: 15px;
     font-weight: bold;
-    font-size: 22px;
     margin-right: 10%;
     white-space: pre-wrap;
+    text-align: center;
+}
+@media screen and (max-width:767px){
+
+    .InputSingUp input{
+        width: 100%;
+        padding: 10px;
+
+    }
+    .InputSingUp h4{
+        font-size: 20px;
+    }
+    .InputSingUp input::placeholder{
+        font-size: 11px;
+    }
+  .ErrorSingup{
+    margin-top: 5px;
+    font-size: 10px;
+  }
 }
