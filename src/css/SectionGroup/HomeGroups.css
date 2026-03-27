@@ -907,5 +907,20 @@ width: 97%;
 .Btm-Post button:hover{
       background-color: var(--blue);
 }
+.Profile-logo img{
+
+width: 80px;
+height: 80px;
+}
+.Setting-Groups input{
+    width: 90%;
+}
+.permissions-label{
+    width: 90%;
+}
+.Btm-Setting-Groups{
+
+    padding-bottom: 50px;
+}
     }
 
