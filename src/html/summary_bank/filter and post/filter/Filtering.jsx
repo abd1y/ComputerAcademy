@@ -6,7 +6,7 @@ import BtnSaveandRestar from './BtnSaveandRestar'
 import '../../../../css/SummaryBank/Filtering.css'
 export default function Filtering({Summary_bankAPI,setlevel,setdepartments,SetCourse,slidefilter}) {
   return (
-    <div id='itemFilter' className='itemFilter' style={{display:slidefilter?"none":"block"}}>
+    <div id='itemFilter' className={slidefilter ? 'itemFilter':"itemFilteractive"} style={{display:slidefilter?"none":"flex"}}>
         <div className="content">
     <Department setdepartments={setdepartments}/>
     <Level setlevel={setlevel} />
