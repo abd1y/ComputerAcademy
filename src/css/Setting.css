@@ -356,10 +356,8 @@ justify-content: center;
 [dir="rtl"].ChangPassword p{
     direction: rtl;
 }
-.Otheritem{
-    margin-bottom: 60px;
-}
-.LogoutAndsave{
-    padding-bottom: 40px;
+
+.change{
+    padding-bottom: 90px;
 }
 }
