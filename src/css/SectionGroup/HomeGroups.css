@@ -913,7 +913,10 @@ width: 80px;
 height: 80px;
 }
 .Setting-Groups input{
-    width: 90%;
+    width: 95%;
+}
+.Title-permissions{
+    width: 95%;
 }
 .permissions-label{
     width: 90%;
