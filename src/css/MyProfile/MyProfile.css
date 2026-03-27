@@ -99,9 +99,9 @@ color: #24eaa8;
 }
 
 .BioProfile{
-justify-content: start;
+
 width: 100%;
-height: 50%;
+height: 100%;
 display: flex;
 flex-direction: row;
 
@@ -109,19 +109,25 @@ flex-direction: row;
 .BioProfile p{
     color: var(--whate);
     white-space:pre-warp ;
+    width: 90%;
+     flex-wrap: wrap;
+ 
 }
 .NameBio{
-    display: flex;
- 
-    align-items: center;
+   display: flex;
+width: 20%;
+    align-items: center;   
 }
 .NameBio p{
+ 
  color: rgb(251, 255, 0);
 }
 
 .Line{
+  
  border-left: 1px solid gold;
 }
+
 /* BOTTOM DESIGN */
 
 .TitleDocementPost{
@@ -284,4 +290,67 @@ background-size: 200% 100%;
    
     font-size: 50px;
     color: var(--blue);
+}
+@media screen and (max-width:767px){
+    .ButtinBackHome{
+        margin: 0;
+    }
+    .ImagProfile{
+        width: 135px;
+        height: 120px;
+    }
+    .ImagProfile img{
+         width: 90px;
+        height: 90px;
+    }
+    .NameProfile h1{
+        font-size: 20PX;
+    }
+  .StarPont{
+    font-size: 20px;
+  }
+  .BioProfile{
+flex-direction: column;
+  }
+  .NameBio{
+width: 100%;
+display: flex;
+ white-space: nowrap;
+  }
+  .NameBio p{
+
+    border-bottom: 1px gold solid;
+
+    text-align: center;
+    padding-bottom: 5px;
+  }
+  .BioProfile p{
+    text-align: center;
+  }
+  .TitleDocementPosth1{
+    font-size: 20px;
+    padding-bottom:5px ;
+  }
+ .MyProfile{
+    padding-bottom: 60px;
+  }
+   .PicDocementProfile{
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+  .PicDocementProfile  img{
+
+    width: 100px;
+    height: 100px;
+  }
+  .InfoDocementProfile h1{
+    font-size: 20px;
+  }
+  .MsgNoPostDoement p{
+
+      font-size: 15px;
+  }
+ 
 }
