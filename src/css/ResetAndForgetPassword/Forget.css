@@ -164,6 +164,7 @@ grid-template-columns: 100% 0% 0% ;
  .StepTwo{
     margin: 25px 39vh;
     width: 60%;
+   
 
  }
  .TitleSteptwo{
@@ -187,7 +188,6 @@ color: var(--blue);
 
  }
  .InputStep2 Input{
-   
     width: 70%;
     padding: 15px;
     margin: 4px;
@@ -286,6 +286,7 @@ padding: 15px;
 outline: none;
 border: none;
 border-radius: 10px;
+font-weight: bold;
 color: var(--whate);
 }
 .BtmSteepthree button:hover{
@@ -307,4 +308,81 @@ color: var(--whate);
 .hourglass_wate_s3{
 
   margin-right: 30px;
+}
+
+@media screen and (max-width:767px){
+    .Steps{
+        display: none;
+    }
+    .itemStepOne{
+               width: 100%;
+        margin: 20% 0;
+        padding: 0 10px;
+    }
+    .itemStepOne h4{
+       text-align: start;
+       width: 100%;
+        margin-bottom:10px ;
+        font-size: 25px;
+    }
+    .itemStepOne input{
+        width: 97%;
+        margin: 0;
+        /* margin-left: -20px; */
+        margin-bottom: 10px;
+    }
+    .itemStepOne button{
+         width: 97%;
+        margin: 0;
+    }
+    .hourglass_wate{
+        width: 100%;
+        padding: 10px;
+    }
+    .ErrorStep1{
+        width: 100%;
+    }
+    .ErrorStep1 i p{
+        font-size: 30px;
+    }
+     .StepTwo{
+        margin: 25px 0;
+        width: 100%;
+        height: 100%;
+     }
+      .InputStep2{
+        width: 100%;
+      }
+       .InputStep2 Input{
+        width: 100%;
+        font-size: 15px;
+       }
+       .ButtonStp2{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        padding: 10px ;
+       }
+       .ButtonStp2 button{
+        flex-direction: column-reverse;
+        width: 100%;
+        margin: 7px 0;
+       }
+       .ErrorStep2{
+        font-size: 23px;
+       }
+       .itemStepThree{
+        margin-top: 40px;
+        width: 100%;
+       }
+       .BtmSteepthree button{
+        font-size: 15px;
+       }
+       .ErrorStep3{
+        font-size: 27px;
+         margin-right: 0px;
+       }
+       .hourglass_wate_s3{
+        margin-right: 0;
+       }
 }
