@@ -21,11 +21,11 @@ export default function ItemVideo({FullSecreen ,fullvideo,PlayVideoClick,playVid
       <p className='TimeVideo'></p>
       
 <div className="play-video" >
-<i onClick={CurrentTimeAdd}  class="ri-replay-10-line clickVideo"></i>
+<i onClick={CurrentTimeAdd}  class="ri-replay-10-line "></i>
   {
     !playVideo?(  <i onClick={PlayVideoClick} title={t('Play')} class="ri-play-fill "></i>):(  <i title={t('Stop')} onClick={PlayVideoClick} class="ri-pause-line"></i>)
   }
-<i onClick={CurrentTimeSub} class="ri-forward-10-line clickVideo"></i>
+<i onClick={CurrentTimeSub} class="ri-forward-10-line "></i>
 
 
 </div>

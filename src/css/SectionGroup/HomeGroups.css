@@ -817,17 +817,17 @@ cursor: pointer;
         margin: 20px 0;
     }
     .play-video{
-        width: 60px;
+        width: 50%;
     }
     .rang{
-        width: 90%;
+        width: 60%;
     }
 
     .TimeVideo{
         width: 200px;
     }
     .Full-Screen{
-        width: 50px;
+        display: none;
     }
     .Icon-pdf{
         width: 20%;
@@ -835,9 +835,7 @@ cursor: pointer;
     .Rght-pdf{
         display: none;
     }
-    .clickVideo{
-        display: none;
-    }
+  
     .Title-Post{
         width: 100%;
         padding: 10px 0;
