@@ -30,7 +30,7 @@
 .itemSingup{
      padding:  10px;
      padding-top: 0; 
-    width: 100%;
+    width: 80%;
     height: 100%;
             overflow-y: scroll;
             scrollbar-width: none;
@@ -110,6 +110,9 @@ spin{
     text-align: center;
 }
 @media screen and (max-width:767px){
+    .itemSingup{
+        width: 100%;
+    }
 
     .InputSingUp input{
         width: 100%;

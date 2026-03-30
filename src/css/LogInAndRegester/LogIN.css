@@ -35,7 +35,7 @@
     border-radius: 10px;
      padding:  10px;
      padding-top: 0; 
-    width: 100%;
+    width: 70%;
     height: 100%;
 
    
@@ -163,6 +163,9 @@ background-color: #131f3a;
 
 }
 @media screen and (max-width:767px){
+    .itemLogin{
+        width: 100%;
+    }
 .TitleIcon{
    margin: 0 -20px;
     
