@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next'
 export default function TheDocumentProfile({dataProfile,data_summary}) {
       const {i18n}=useTranslation()
   return (
-     <a className='LinkDocement' href={`https://abdullih123.pythonanywhere.com${data_summary?.File}`} download={data_summary?.File_name}>
+     <a className='LinkDocement' href={`http://127.0.0.1:8000${data_summary.File}`} >
     <div className='TheDocumentProfile'dir={i18n.language==="en"?"ltr":"rtl"}>
 <PicDocementProfile/>
 
