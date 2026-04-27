@@ -53,6 +53,7 @@ setloding(false)
 
 .catch(
   err=>{
+    console.log(err)
 setclickBtm(false)
 setloding(false)
 seterorr(true)
