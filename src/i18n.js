@@ -30,7 +30,7 @@ i18n
   },
    backend: {
      
-      loadPath: '/ComputerAcademy/locales/{{lng}}/{{ns}}.json'
+      loadPath: '/locales/{{lng}}/{{ns}}.json'
     },
     interpolation: {
       escapeValue: false, // not needed for react as it escapes by default
