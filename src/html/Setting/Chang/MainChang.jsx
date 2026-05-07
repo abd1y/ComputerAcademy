@@ -15,21 +15,36 @@ export default function MainChang() {
   const [ChangePassword,setChangePassword]=useState("")
   const [ConfirmPassword,setConfirmPassword]=useState("")
   const [Erorr,setErorr]=useState([])
-
   const [loader,setloder]=useState(false)
+  const [data_save,setdatasave]=useState(null)
   
   // Data
-   const data_save=JSON.parse(localStorage.getItem('data'))
+   const Email=JSON.parse(localStorage.getItem('email'))
+   console.log("The Email is",Email)
    const token=JSON.parse(localStorage.getItem("Token"))
   
 
   // function
   const dataUser=()=>{
+API.get("auth/UserSetting/",
+  {
 
-    setname(data_save?.Name)
-    setImagprofile(data_save?.Profile_image)
-    setBio(data_save?.Bio)
-    setemail(data_save?.email)
+    headers:{
+       Authorization:`Token ${token}`
+     }
+  }
+)
+.then(res=>{
+setdatasave(res.data.Profile)
+  setname(res.data.Profile?.Name)
+    setImagprofile(res.data.Profile?.Profile_image)
+    setBio(res.data.Profile?.Bio)
+    setemail(Email)
+})
+.catch(err=>{
+    console.log(err);
+})
+  
   }
   //  API
 const SettingAPI=()=>{
