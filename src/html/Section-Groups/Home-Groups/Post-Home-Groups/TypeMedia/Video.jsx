@@ -1,6 +1,5 @@
   import { useEffect, useRef } from "react";
 
-  // 1. استدعاء ملفات التنسيق ودالة تسجيل العناصر المخصصة
   import '@vime/core/themes/default.css';
   import '@vime/core/themes/light.css';
   import { defineCustomElements } from '@vime/core/loader';
