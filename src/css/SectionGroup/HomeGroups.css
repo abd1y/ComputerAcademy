@@ -167,11 +167,14 @@ margin: 10px auto;
 
 }
 .Video Video{
-    object-fit: contain ; 
-    width: 100%;
-    height: 100%;
-
-} 
+max-width: 100% !important;
+max-height: 100% !important;
+            height: auto;
+   width: 100%;
+  background-color: #080c17;
+            
+    
+}
 
 .Pdf{
     width: 100%;
@@ -843,15 +846,7 @@ margin-left: 30px;
     margin-top: 50px;
     margin-right: 30px;
 }
-.Video Video{
-max-width: 100% !important;
-max-height: 100% !important;
-            height: auto;
-   width: 100%;
-  background-color: rgb(86, 82, 82);
-            
-    
-}
+
 .Delete-item-video:hover{
     color: wheat;
 }
