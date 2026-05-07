@@ -17,6 +17,7 @@ const [loding,setLoding]=useState(true)
         loading="lazy"
     onLoad={()=>setLoding(false)}
     onError={()=>{setLoding(false)}}
+    style={loding ? { display: 'none' } : {}}
       />
     </div>
   )
