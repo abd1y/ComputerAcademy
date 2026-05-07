@@ -157,65 +157,22 @@ aspect-ratio: 4 / 5;
   object-fit: cover;
   
 }
+
 .Type-Media-video{
-    display: flex;
-position: relative;
-      width: 100%;
-max-width: 800px;
+    width: 100%;
+margin: 10px auto;
+ border-radius: 12px;
+ overflow: hidden;
+
 
 }
-.Type-Media-video video{
-   display: block;
+.Video Video{
+    object-fit: fill ; 
     width: 100%;
-      height: 100%;
-      padding:  0;
-      object-fit: cover;
-}   
-.item-video{
+    height: 100%;
 
-    display: flex;
-    position: absolute;
-    align-items: center;
-       direction: rtl;
-    width: 100%;
-    bottom: 1px;
-    color: var(--whate);
-    background-color: #35353c77;
-      user-select: none;
-}
-.item-video i{
-    font-size: 20px;
-    margin: 0 8px;
-}
-.item-video i:hover{
-    color: gold;
-}
-.item-video input{
-    width: 100%;
-  
-}
-.rang {
-    margin: 2px 5px;
-    width: 87%;
-    display: flex;
-    align-items: center;
-}
-.TimeVideo{
-    font-size: 12px;
-    margin: 10px 0;
-    width: 125px;
-    
-}
-.play-video{
-    width: 150px;
-    display: flex;
-    direction: ltr;
-    justify-content: center;
+} 
 
-}
-.play-video i{
-  font-size: 20px;
-}
 .Pdf{
     width: 100%;
     height: 20vh;
@@ -816,19 +773,8 @@ cursor: pointer;
         width: 100%;
         margin: 20px 0;
     }
-    .play-video{
-        width: 50%;
-    }
-    .rang{
-        width: 60%;
-    }
+ 
 
-    .TimeVideo{
-        width: 200px;
-    }
-    .Full-Screen{
-        display: none;
-    }
     .Icon-pdf{
         width: 20%;
     }
