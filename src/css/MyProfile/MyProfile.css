@@ -109,13 +109,13 @@ flex-direction: row;
 .BioProfile p{
     color: var(--whate);
     white-space:pre-warp ;
-    width: 90%;
+    width: 100%;
      flex-wrap: wrap;
  
 }
 .NameBio{
    display: flex;
-width: 40%;
+width: 36%;
     align-items: center;   
 }
 .NameBio p{

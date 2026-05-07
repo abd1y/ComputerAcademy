@@ -1,58 +1,37 @@
-import React from 'react'
+  import { useEffect, useRef } from "react";
 
-import ItemVideo from './ItemVideo'
-import { useRef,useState,useEffect } from 'react'
-import {handlerVideo} from '../../../../../js/Scrept'
+  // 1. استدعاء ملفات التنسيق ودالة تسجيل العناصر المخصصة
+  import '@vime/core/themes/default.css';
+  import '@vime/core/themes/light.css';
+  import { defineCustomElements } from '@vime/core/loader';
+import {  Player,
+  Ui,
+DefaultUi , Video} from '@vime/react';
 
-export default function Video({LinkVideo}) {
-  // ادوات الخاصه بشريط الفيديو
-const videoRef=useRef(null)
-const PlayVideoRef=useRef(null)
-const progresRef=useRef(null)
-const [fullvideo,setfullvideo]=useState(false)
-const [playVideo,setplayVideo]=useState(false)
+  export default function VideoMidea({ LinkVideo }) {
+    const playerRef = useRef(null);
 
-const FullSecreen=()=>{
-if(!document.fullscreenElement){
-  videoRef.current.requestFullscreen()
-  setfullvideo(true)
-}else{
-  document.exitFullscreen()
-  setfullvideo(false)
-}
-}
-const PlayVideoClick=()=>{
-if(!playVideo){
-  PlayVideoRef.current.play()
-  setplayVideo(true)
-}else{
-PlayVideoRef.current.pause()
-  setplayVideo(false)
-}
 
-}
-const CurrentTimeAdd =()=>{
-PlayVideoRef.current.currentTime+=10
-}
-const CurrentTimeSub =()=>{
-PlayVideoRef.current.currentTime-=10
-}
-useEffect(()=>{
-  handlerVideo()
-},[])
+    return (
+      <div className="Type-Media-video">
 
-// end 
-  return (
-    <div className='Type-Media-video'  ref={videoRef}  >
-        <video  
-        className='video'
-        ref={PlayVideoRef}
-          onClick={PlayVideoClick}
-          src={LinkVideo}
-            >
-          
-            </video>
-      <ItemVideo FullSecreen={FullSecreen} fullvideo={fullvideo} PlayVideoClick={PlayVideoClick} playVideo={playVideo} CurrentTimeAdd={CurrentTimeAdd} CurrentTimeSub={CurrentTimeSub} />
+          <Player className="Video" ref={playerRef} theme="dark" playsinline
+          style={{
+            '--vm-player-theme': '#164465',
+            '--vm-slider-thumb-bg': '#065084',
+          }}
+          >
+<Video>
+
+          <source data-src={LinkVideo} type="video/mp4" />
+      
+</Video>
+
+      <Ui>
+        <DefaultUi  noPip={true}/>
+      </Ui>
+    </Player>
+
       </div>
-    )
+    );
   }

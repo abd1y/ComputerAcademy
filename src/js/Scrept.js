@@ -113,56 +113,56 @@ summaryBankNAV.addEventListener("click",()=>{
 }
 
 export const handlerVideo=()=>{
-  let Typvideo=document.querySelectorAll('.Type-Media-video')
+//   let Typvideo=document.querySelectorAll('.Type-Media-video')
 
-  Typvideo.forEach(Typvideo=>{
-    let progres=Typvideo.querySelector(".progres")
-    let video=Typvideo.querySelector(".video")
-    let TimeVideo=Typvideo.querySelector(".TimeVideo")
-    let itemvideo=Typvideo.querySelector(".item-video")
-let handler;
-
-
+//   Typvideo.forEach(Typvideo=>{
+//     let progres=Typvideo.querySelector(".progres")
+//     let video=Typvideo.querySelector(".video")
+//     let TimeVideo=Typvideo.querySelector(".TimeVideo")
+//     let itemvideo=Typvideo.querySelector(".item-video")
+// let handler;
 
 
- video.addEventListener("loadedmetadata",()=>{
-  progres.max=video.duration
-  TimeUpdite()
- })
-video.addEventListener('timeupdate',()=>{
-  progres.value=video.currentTime;
-  TimeUpdite()
-})
-progres.addEventListener("input",()=>{
-  video.currentTime=progres.value
-  TimeUpdite()
-})
 
-function formattime(Secends){
-const Hours=Math.floor(Secends/3600)
-const minent=Math.floor((Secends%3600)/60)
-const sec=Math.floor(Secends%60);
-// return "1:04:4"
-return `${Hours.toString().padStart(2,"0")}:${minent.toString().padStart(2,"0")}:${sec.toString().padStart(2,"0")}`
 
-}
+//  video.addEventListener("loadedmetadata",()=>{
+//   progres.max=video.duration
+//   TimeUpdite()
+//  })
+// video.addEventListener('timeupdate',()=>{
+//   progres.value=video.currentTime;
+//   TimeUpdite()
+// })
+// progres.addEventListener("input",()=>{
+//   video.currentTime=progres.value
+//   TimeUpdite()
+// })
 
-function TimeUpdite(){
-const CurentTime=formattime(video.currentTime)
-const Totle=formattime(video.duration)
-  TimeVideo.textContent=`${CurentTime}/${Totle}`
-}
-function ItemVideo(){
-  itemvideo.style.display="flex"
-  if(handler) clearTimeout(handler)
+// function formattime(Secends){
+// const Hours=Math.floor(Secends/3600)
+// const minent=Math.floor((Secends%3600)/60)
+// const sec=Math.floor(Secends%60);
+// // return "1:04:4"
+// return `${Hours.toString().padStart(2,"0")}:${minent.toString().padStart(2,"0")}:${sec.toString().padStart(2,"0")}`
 
-    handler=setTimeout(()=>{
-  itemvideo.style.display="none"
-    },5000)
-}
-  video.addEventListener('mousemove',ItemVideo)
+// }
+
+// function TimeUpdite(){
+// const CurentTime=formattime(video.currentTime)
+// const Totle=formattime(video.duration)
+//   TimeVideo.textContent=`${CurentTime}/${Totle}`
+// }
+// function ItemVideo(){
+//   itemvideo.style.display="flex"
+//   if(handler) clearTimeout(handler)
+
+//     handler=setTimeout(()=>{
+//   itemvideo.style.display="none"
+//     },5000)
+// }
+//   video.addEventListener('mousemove',ItemVideo)
  
-  })
+//   })
 
 
 }
