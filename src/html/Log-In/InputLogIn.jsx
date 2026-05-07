@@ -29,6 +29,7 @@ const nav=useNavigate()
         setclick(false)
         setmsgError(false)
 localStorage.setItem("data",JSON.stringify(res.data))
+localStorage.setItem("email",JSON.stringify(res.data.email))
 localStorage.setItem("Token",JSON.stringify(res.data.Token))
 nav('/',{replace:true})
       }

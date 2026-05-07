@@ -14,7 +14,7 @@ export default function ChangeBio({Bio,setBio}) {
       <textarea
        style={{textAlign:i18n.language==="en"?"left":"right"}}
       value={Bio} onChange={handler} maxLength={250}></textarea>
-      <p dir={i18n.language==="en"?"rtl":"ltr"}>{Bio.length}/250</p>
+      <p dir={i18n.language==="en"?"rtl":"ltr"}>{Bio ? Bio.length : 0}/250</p>
     </div>
   )
 }
