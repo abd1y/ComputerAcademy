@@ -4,6 +4,7 @@ import Changinfoaccount from "./ChangInformation/Changinfoaccount"
 import Other from './other/Other'
 import { useTranslation } from 'react-i18next'
 import API from '../../Axios'
+import {useNavigate } from 'react-router-dom'
 export default function MainChang() {
      const {t}=useTranslation()
 //  useState
@@ -17,6 +18,7 @@ export default function MainChang() {
   const [Erorr,setErorr]=useState([])
   const [loader,setloder]=useState(false)
   const [data_save,setdatasave]=useState(null)
+    const  nav=useNavigate()
   
   // Data
    const Email=JSON.parse(localStorage.getItem('email'))
@@ -42,7 +44,7 @@ setdatasave(res.data.Profile)
     setemail(Email)
 })
 .catch(err=>{
-    console.log(err);
+    nav('/Log-in',{replace:true})
 })
   
   }

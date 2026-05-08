@@ -42,11 +42,7 @@ if (cheack){
             onClick={showPassword}
           ></i>
         </div>
-        <Link to={"/Forget-password"}>
-          <div className="ForgetPasswordSys">
-            <p> {t("Forget Password")}</p>
-          </div>
-        </Link>
+
       </>
     );
 }
