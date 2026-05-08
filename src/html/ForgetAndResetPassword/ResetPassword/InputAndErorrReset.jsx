@@ -22,6 +22,8 @@ const cheackCodehandler=()=>{
     iswate(false)
     seterorr(false)
     localStorage.setItem("data",JSON.stringify(res.data))
+    localStorage.setItem("Token",JSON.stringify(res.data.Token))
+    localStorage.setItem("email",JSON.stringify(res.data.email))
     nav('/',{replace:true})
   }
 

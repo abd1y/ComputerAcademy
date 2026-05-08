@@ -18,8 +18,9 @@ export default function StepThree({step}) {
             Confirm_password:Confirm_password
         })
         .then(res=>{
-            localStorage.setItem("data",JSON.stringify(res.data))
-            localStorage.removeItem("email")
+    localStorage.setItem("data",JSON.stringify(res.data))
+    localStorage.setItem("Token",JSON.stringify(res.data.Token))
+    localStorage.setItem("email",JSON.stringify(res.data.email))
             localStorage.removeItem("email_forgetPassword")
             nav('/',{replace:true})
 
