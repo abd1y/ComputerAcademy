@@ -4,8 +4,8 @@ import { useTranslation } from 'react-i18next'
 import { useParams } from 'react-router-dom'
 export default function BtmEditAndDeletPostGroup({deletehandlerPost,data}) {
        const {t}=useTranslation()
-  const [List,setList]=useState(false)
-  const [loding,setLoding]=useState(false)
+  const [List,setList]=useState(true)
+  const [loding,setLoding]=useState(true)
   const clickList=()=>{
     setList(!List)
   }
