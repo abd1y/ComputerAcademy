@@ -3,8 +3,10 @@ import ChangeProfile from './ChangPforfile/ChangeProfile'
 import Changinfoaccount from "./ChangInformation/Changinfoaccount"
 import Other from './other/Other'
 import { useTranslation } from 'react-i18next'
+import {useNavigate } from 'react-router-dom'
 import API from '../../Axios'
 export default function MainChang() {
+    const nav=useNavigate()
      const {t}=useTranslation()
 //  useState
   const [name,setname]=useState("")
@@ -42,7 +44,7 @@ setdatasave(res.data.Profile)
     setemail(Email)
 })
 .catch(err=>{
-    console.log(err);
+   nav('/Log-in',{replace:true})
 })
   
   }
