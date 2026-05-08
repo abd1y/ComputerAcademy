@@ -2,7 +2,7 @@ import React from 'react'
 import { useTranslation } from 'react-i18next'
 export default function TitleReset() {
     const {t}=useTranslation()
-    const email=JSON.parse(localStorage.getItem("email"))
+    const email=localStorage.getItem("email")
   return (
     <div className="TitleReset">
    
