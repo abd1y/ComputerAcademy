@@ -826,7 +826,7 @@ cursor: pointer;
 }
 @media screen and (max-width:767px){
     .HomeGroups{
-        padding-bottom: 50px;
+        padding-bottom: 110px;
     }
     .Post-Card-Group{
         width: 97%;
