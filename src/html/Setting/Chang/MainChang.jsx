@@ -45,6 +45,9 @@ setdatasave(res.data.Profile)
 })
 .catch(err=>{
     nav('/Log-in',{replace:true})
+     localStorage.removeItem("Token")
+   localStorage.removeItem("data")
+   localStorage.removeItem("email")
 })
   
   }
