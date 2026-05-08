@@ -5,6 +5,8 @@ export default function Logout() {
   const nav=useNavigate()
   const Logouthandler=()=>{
     localStorage.removeItem("Token")
+    localStorage.removeItem("data")
+    localStorage.removeItem("email")
     nav('/Log-in',{ replace: true })
   }
      const {t}=useTranslation()
