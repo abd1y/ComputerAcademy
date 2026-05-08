@@ -159,5 +159,6 @@
    "No posts have been published.":"لا توجد اي منشورات منشوره ",
    "Delete the group":"حذف المجموعه",
    "This user does not have any published document.":"المستخدم لا يمتلك اي ملفات منشوره",
-   "Please wait":"الرجاء الانتظار"
+   "Please wait":"الرجاء الانتظار",
+   "Loding to delete":"جاري الحذف"
 }
