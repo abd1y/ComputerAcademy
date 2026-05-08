@@ -4,16 +4,18 @@ import API from '../../../../Axios'
 
 export default function UserComent({ comment, setcomments }) {
 
-  const [loding, setloding] = useState(null)
+  const [loadingId, setLoadingId] = useState(null)
 
   const data_save = JSON.parse(localStorage.getItem("data"))
-  const id = data_save.id
+  const id = data_save?.id
 
   const Token = JSON.parse(localStorage.getItem("Token"))
   const { Group_code } = useParams()
 
   const deleteCommithandler = (CommentId) => {
-    setloding(CommentId)
+    if (!CommentId) return
+
+    setLoadingId(CommentId)
 
     API.delete(
       `Groups/delete_comment/${CommentId}/?Group_code=%23${Group_code}`,
@@ -24,23 +26,26 @@ export default function UserComent({ comment, setcomments }) {
       }
     )
       .then(() => {
-        setloding(null)
-
-        setcomments(prv =>
-          prv.filter(commit => commit.comment_id !== CommentId)
+        setcomments(prev =>
+          prev.filter(item => {
+            const itemId = item.Comment_id || item.comment_id
+            return itemId !== CommentId
+          })
         )
+
+        setLoadingId(null)
       })
       .catch(() => {
-        setloding(null)
+        setLoadingId(null)
       })
   }
 
   return (
     <div className='User-Comment'>
 
-      {comment.map((item_comment) => {
+      {comment?.map((item_comment) => {
 
-        const CommentId = item_comment.comment_id
+        const CommentId = item_comment.Comment_id || item_comment.comment_id
 
         return (
           <div className='item-coment-for-each-user' key={CommentId}>
@@ -50,6 +55,7 @@ export default function UserComent({ comment, setcomments }) {
                 <img
                   className='Imag-profile-comment'
                   src={item_comment.Profile_image}
+                  alt=""
                 />
               </Link>
             </div>
@@ -63,20 +69,19 @@ export default function UserComent({ comment, setcomments }) {
               <p>{item_comment.content}</p>
 
               {
-                loding === CommentId ? (
+                loadingId === CommentId ? (
                   <div className='contener-loding-delete-comment'>
                     <div className="loding-delete-comment"></div>
                   </div>
                 ) : (
-                  <p
-                    className='Delete-commit'
-                    onClick={() => deleteCommithandler(CommentId)}
-                    style={{
-                      display: id === item_comment.user_id ? "block" : "none"
-                    }}
-                  >
-                    Delete
-                  </p>
+                  id === item_comment.user_id && (
+                    <p
+                      className='Delete-commit'
+                      onClick={() => deleteCommithandler(CommentId)}
+                    >
+                      Delete
+                    </p>
+                  )
                 )
               }
 
