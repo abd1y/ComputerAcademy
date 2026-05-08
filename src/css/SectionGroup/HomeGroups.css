@@ -324,6 +324,26 @@ color: red;
 border-top: 1px solid  #f2f8fc5b;
     height: 20%;
 }
+.contener-loding-comment{
+    width: 5%;
+}
+.loding-comment {
+  width: 30px;
+  aspect-ratio: 2;
+  --_g: no-repeat radial-gradient(circle closest-side,#ffffff 90%,#0000);
+  background: 
+    var(--_g) 0%   50%,
+    var(--_g) 50%  50%,
+    var(--_g) 100% 50%;
+  background-size: calc(100%/3) 50%;
+  animation: l3 1s infinite linear;
+}
+@keyframes l3 {
+    20%{background-position:0%   0%, 50%  50%,100%  50%}
+    40%{background-position:0% 100%, 50%   0%,100%  50%}
+    60%{background-position:0%  50%, 50% 100%,100%   0%}
+    80%{background-position:0%  50%, 50%  50%,100% 100%}
+}
 .Add-Coment input{
     background-color: var(--brown);
     color: var(--whate);
@@ -920,6 +940,9 @@ height: 80px;
 
     width: 100%;
    margin-left: 17px;
+}
+.contener-loding-comment{
+    width: 13%;
 }
     }
 
