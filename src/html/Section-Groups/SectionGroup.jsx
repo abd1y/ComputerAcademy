@@ -20,7 +20,7 @@ export default function SectionGroup() {
    const [allow_comments,setallow_comments]=useState(true)
    const Token=JSON.parse(localStorage.getItem("Token"))
    const data_save=JSON.parse(localStorage.getItem("data"))
-   const NameUser=data_save.Name
+   const NameUser=data_save.id
    const {Group_code}=useParams()
 const MemberAPI=()=>{
   isLoding(true)
@@ -37,7 +37,7 @@ const MemberAPI=()=>{
     setAllow_post(res.data.data.allow_post)
     setallow_comments(res.data.data.allow_comments)
     isLoding(false)
-    const findNameuser=member.find(e=>e.Name === NameUser)
+    const findNameuser=member.find(e=>e.id === NameUser)
     const RoleUser=findNameuser? findNameuser.role :"Member"
     setRole(RoleUser)
   })
@@ -77,7 +77,7 @@ const SetteingGroupAPI=()=>{
   })
 }
 const CanPost=allow_post || Role ==="Admin"
-const CanComment=allow_post || Role ==="Admin"
+const CanComment=allow_comments || Role ==="Admin"
   return (
     <div className="SectionGroup">
       <SliderGroups active={active} setactive={setactive} CanPost={CanPost} />
