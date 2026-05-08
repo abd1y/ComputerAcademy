@@ -118,14 +118,27 @@
     margin: 3px 3vh;
     border-radius: 3px 0 3px 3px;
 }
-.Tolls-Btm-post-Group li{
+.Tolls-Btm-post-Group li,.contener-loder-delete{
     text-align: center;
     padding: 10px;
-    border-bottom: 1px solid var(--whate);
 }
-.Tolls-Btm-post-Group li:last-child{
-    border: none;
+.contener-loder-delete{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     
 }
+.contener-loder-delete p{
+  color: white;
+   font-size: 15px;
+}
+.loaderDelete {
+ width: 30px;
+  aspect-ratio: 4;
+  background: radial-gradient(circle closest-side,#fffbfb 90%,#0000) 0/calc(100%/3) 100% no-repeat;
+  animation: l2 1s steps(3) infinite;
+}
+@keyframes l2 {to{background-position: 150%}}
 .Tolls-Btm-post-Group li:hover{
     background-color: #27272d;
 }
