@@ -825,9 +825,13 @@ cursor: pointer;
     font-size: 22px;
 }
 @media screen and (max-width:767px){
+    .HomeGroups{
+        padding-bottom: 50px;
+    }
     .Post-Card-Group{
         width: 97%;
         margin: 2% 2%;
+        
     }
     .image-profile-Loding{
         width: 100%;
