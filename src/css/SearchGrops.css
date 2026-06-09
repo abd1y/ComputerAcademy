@@ -30,11 +30,16 @@
 
     
 }
-.ButtonBack i{
+.design-button-Icon{
+    color: var(--whate);
      display: flex;
     background-color: var(--dark-grey);
-    padding: 20px;
+    padding: 15px;
     border-radius: 50%;
+}
+.Icon-Back-Serch{
+    width: 15px;
+    height: 15px;
 }
 .InputSearch{
 
@@ -58,7 +63,7 @@ padding-bottom: 0;
    background-color: var(--Blue-Nght);
    color: var(--whate);
    margin: 0 10px;
-   padding: 12px;
+   padding: 10px;
    border: none;
    border-radius: 20px;
    font-size: 20px;
@@ -118,10 +123,10 @@ padding-bottom: 0;
     margin: 10px;
     
 }
-.handler i{
-   
+.handler-click{
     color: var(--whate);
-    font-size: 30px;
+    width: 30px;
+    height: 30px;
     border-radius: 10px;
      cursor: pointer;
 }
@@ -141,8 +146,9 @@ padding-bottom: 0;
     color: var(--whate);
     height: 100%;
 }
-.ResultNotFind i{
-    font-size: 35px;
+.ResultNotFind svg{
+width: 35px;
+height: 35px;
     color: var(--blue);
 }
 .ResultNotFind p{
