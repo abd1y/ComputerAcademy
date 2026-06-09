@@ -11,7 +11,7 @@ let Titelitem=document.querySelectorAll('.titleNav')
         main.classList.remove("main")
         Titelitem.forEach(title=>{
             title.style.visibility='visible'
-            title.style.display='flex'
+           
     if (window.innerWidth < 480) {
        title.style.display='none'
        
@@ -25,7 +25,7 @@ let Titelitem=document.querySelectorAll('.titleNav')
         main.classList.add("main")
         main.classList.remove("Hoverin")
           Titelitem.forEach(title=>{
-            title.style.display='none'
+            title.style.visibility='hidden'
             
            
         })
