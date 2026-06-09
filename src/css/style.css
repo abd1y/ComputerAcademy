@@ -148,13 +148,10 @@ nav{
         padding: 25px;
      background-color: #444446;
 }
-.titleNav{
-
-    color: var(--whate);
-    padding-left: 5px;
-    visibility: hidden;
-   
-    
+.navIcon{
+      width: 24px;
+    height: 24px;
+    flex-shrink: 0;
 }
 .active{
     background-color: #2b2b2c;
