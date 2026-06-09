@@ -60,7 +60,7 @@
 }
 .Singupbtm{
         width: 97%;
-    margin: 10px 5px;
+    margin: 25px 5px;
     padding: 10px;
     border: none;
     outline: none;
@@ -85,9 +85,10 @@ background-color: #131f3a;
 }
 .SingUpother{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 .gotoLogin{
+    
     cursor: pointer;
     color: var(--blue);
     margin-top: -2px;
