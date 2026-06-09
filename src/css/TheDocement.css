@@ -55,7 +55,8 @@ font-size: 14px;
 
 }
 .NameUser {
-   margin: 10px -6px;
+    padding-top: 4px;
+   margin: 15px -6px;
 }
 .NameUser p{
     display: flex;
@@ -64,6 +65,7 @@ font-size: 14px;
 .Verified{
 display: flex;
  align-items: center;
+padding: 0 2px;
     color: rgb(173, 173, 25);
 }
 
