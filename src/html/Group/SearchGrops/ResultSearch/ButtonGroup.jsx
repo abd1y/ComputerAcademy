@@ -39,8 +39,13 @@ const isMember= data.isMember
         {
         
           !IsAdd?
-          (<i title={t('Join The Groups')} class="ri-add-line AddGroups"></i>):
-          (<i title={t('Leaving the group')} class="ri-subtract-line DeletGroups"></i>)
+          // (<i  class="ri-add-line AddGroups"></i>)
+          (<svg  title={t('Join The Groups')}  xmlns="http://www.w3.org/2000/svg" className='AddGroups handler-click' viewBox="0 0 24 24" fill="currentColor"><path d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z" ></path></svg>)
+          
+          
+          :
+          // (<i  class="ri-subtract-line DeletGroups"></i>)
+          (<svg title={t('Leaving the group')} className='DeletGroups handler-click' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M5 11V13H19V11H5Z"></path></svg>)
         }
       </div>
     )
