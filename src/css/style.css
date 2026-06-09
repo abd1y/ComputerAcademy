@@ -136,7 +136,7 @@ nav{
 }
 
 .item{
-
+    
     display: flex;
     padding: 21px;
     border-bottom: 2px solid var(--dark-grey);
@@ -145,7 +145,11 @@ nav{
     align-items: center;
  
 }
-
+.navIcon{
+      width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+}
 .item:hover:not(.active){
         padding: 25px;
      background-color: #444446;
