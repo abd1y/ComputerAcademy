@@ -163,6 +163,10 @@ nav{
    
     
 }
+.ICon-Erorr{
+    color: var(--Blue-Nght);
+   width: 20px; 
+}
 .active{
     background-color: #2b2b2c;
     font-size: 26px;
