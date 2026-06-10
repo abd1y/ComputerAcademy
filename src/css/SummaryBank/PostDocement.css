@@ -170,24 +170,16 @@ align-items: end;
        border-radius: 10px;
        width: 96%;
 }
-[dir="rtl"].frontSelectDepartment i{
-    direction: ltr;
-    margin-left: -1%;
-    width: 80%;
-   
-  
-    
-}
+
 
 .frontSelectDepartment h1{
     font-size: 24px;
 }
-.frontSelectDepartment i{
-    font-size: 30px;
+.arrow-drop{
+    width: 30px;
     margin-left: 5px;
     direction: rtl;
-    width: 70%;
-    margin-left: 13%;
+ 
 }
 .chooseDepartment{
     display: grid;
@@ -296,10 +288,7 @@ color: var(--whate);
     font-size: 27px;
     
 }
-.FrontSelectLevel i{
-    font-size: 27px;
-    margin-left: -10px;
-}
+
 .ULChoeseLevel{
  
     width: 97%;
@@ -452,7 +441,7 @@ a{
 }
 .contact{
     padding: 10px;
-    font-size: 23px;
+
     display: flex;
     color: var(--whate);
     
@@ -460,6 +449,7 @@ a{
 }
 .contact a{
     margin: 0 5px;
+    width: 23px;
 }
 .Main-Erorr{
     display: flex;
