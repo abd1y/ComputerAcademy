@@ -103,9 +103,11 @@ height: 200em;
 .main{
       grid-template-columns: 93% 1fr;
       
+      
 }
 .Hoverin{
      grid-template-columns: 80% 1fr;
+     
 }
 
 
@@ -134,7 +136,7 @@ nav{
 }
 
 .item{
-
+    
     display: flex;
     padding: 21px;
     border-bottom: 2px solid var(--dark-grey);
@@ -143,15 +145,27 @@ nav{
     align-items: center;
  
 }
-
-.item:hover:not(.active){
-        padding: 25px;
-     background-color: #444446;
-}
 .navIcon{
       width: 24px;
     height: 24px;
     flex-shrink: 0;
+}
+.item:hover:not(.active){
+        padding: 25px;
+     background-color: #444446;
+}
+.titleNav{
+
+    color: var(--whate);
+    padding-left: 5px;
+    visibility: hidden;
+    
+   
+    
+}
+.ICon-Erorr{
+    color: var(--Blue-Nght);
+   width: 20px; 
 }
 .active{
     background-color: #2b2b2c;

@@ -137,19 +137,20 @@ padding-top: 40px;
 margin-top: -35px;
 
 }
-.eyePassword i{
-font-size: 20px;
+.eye-password-Icon{
+width: 20px;
 padding-bottom: 20px;
 margin-top: -15px;
 cursor: pointer;
 
 }
+
+
 #buttonImagProfile{
     cursor: pointer;
     background-color: #0c6cb0;
     display: block;
     padding: 15px;
-    width: 4%;
     border-radius: 20px;
     text-align: center;
       margin-left: 20px;
@@ -157,6 +158,10 @@ cursor: pointer;
    
 
 
+}
+.button-Icon{
+    width: 24px;
+    flex-shrink: 0;
 }
 .imagProfileChang{
     width: 100%;
@@ -176,6 +181,7 @@ justify-content: center;
 
 
 }
+
 .imagProfileChang .image img{
       width: 150px;       
   height: 150px;
@@ -206,9 +212,7 @@ justify-content: center;
     padding: 5px;
     font-size: 22px;
 }
-.ItemtitleSelectLanguage i{
-    font-size: 25px;
-}
+
 .ChoiseLsnguageACT{
     
     display: grid;
@@ -266,8 +270,8 @@ justify-content: center;
     transition: 0.8s;
    
 }
-.itemOters i{
-    font-size: 39px;
+.Icon-itemOther{
+    width: 39px;
     color: rgb(250, 250, 250);
 
   
@@ -289,6 +293,7 @@ justify-content: center;
 .Loder-save{
     animation: loderSave 0.6s ease infinite;
 }
+
 @keyframes loderSave {
     from{
         transform: rotate(0deg);
@@ -297,6 +302,7 @@ justify-content: center;
         transform: rotate(360deg); 
     }
 }
+
 .Result-successfully{
     width: 100%;
     display: flex;
