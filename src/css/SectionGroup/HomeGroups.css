@@ -281,8 +281,17 @@ font-size: 22px;
 .Like-And-Comment-click{
         border-bottom: 1px solid #f2f8fc5b;
 }
+.content-item-Like-comment{
+   display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.Icon-Like-Coment{
+    width: 26px;
+}
 .Like-item{
-      
+    
     height: 100%;
     width: 50%;
     display: flex;
