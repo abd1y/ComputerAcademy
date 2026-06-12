@@ -65,9 +65,9 @@
     align-items: center;
        user-select: none;
 }
-.GroupEmpty i{
+.GroupEmpty svg{
     margin-bottom: 20px;
-    font-size: 10em;
+    width: 12em;
     color:var(--blue);
 }
 .GroupEmpty h1{
